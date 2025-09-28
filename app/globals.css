@@ -1,5 +1,5 @@
-@import "tailwindcss";
-
+@import "tailwindcss";             /* v4 way */
+@plugin "@tailwindcss/typography"; /* for prose styles */
 :root {
   --background: #ffffff;
   --foreground: #171717;
