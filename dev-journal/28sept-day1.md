@@ -20,4 +20,4 @@ I restarted this thing like… 3 times? Maybe 4? Lost count honestly. Every time
 
 But hey, by the end of today, I had a working blog **live** on the internet. The frontend still looks kinda bland (we’ll polish later), but the fact that I can type a post in Markdown and see it on my site is insane.  
 
-Honestly proud of myself for pushing through the chaos. This is officially **Day !** of the blog’s journey. From “uh what is npm” in the morning → to “my site is live” by night. Messy, but real. Exactly my vibe. And yes i spent 10 hours. oops. 
+Honestly proud of myself for pushing through the chaos. This is officially **Day 1** of the blog’s journey. From “uh what is npm” in the morning → to “my site is live” by night. Messy, but real. Exactly my vibe. And yes i spent 10 hours. oops. 
