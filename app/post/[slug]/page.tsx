@@ -6,13 +6,14 @@ import { remark } from "remark";
 import html from "remark-html";
 import Link from "next/link";
 
-// The App Router-friendly props type
 type PageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>; // 👈 Netlify/Next build expects Promise here
 };
 
 export default async function Page({ params }: PageProps) {
-  const filePath = path.join(process.cwd(), "content", "posts", `${params.slug}.md`);
+  const { slug } = await params; // 👈 await the promise
+
+  const filePath = path.join(process.cwd(), "content", "posts", `${slug}.md`);
   if (!fs.existsSync(filePath)) return notFound();
 
   const raw = fs.readFileSync(filePath, "utf8");
