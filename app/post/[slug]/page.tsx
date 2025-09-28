@@ -7,9 +7,9 @@ import { notFound } from "next/navigation";
 import { remark } from "remark";
 import html from "remark-html";
 
-type Props = { params: { slug: string } };
+type Props = { PageProps: { slug: string } };
 
-export default async function PostPage({ params }: Props) {
+export default async function PostPage({ PageProps }: Props) {
   const filePath = path.join(process.cwd(), "content", "posts", `${params.slug}.md`);
   if (!fs.existsSync(filePath)) return notFound();
 
