@@ -1,6 +1,6 @@
 import { getAllPosts } from "@/lib/posts";
 import Hero from "./components/Hero";
-import CategoryCard from "./components/Categorycard";
+import CategoryCard from "./components/CategoryCard";
 import PostCard from "./components/PostCard";
 import Link from "next/link";
 
