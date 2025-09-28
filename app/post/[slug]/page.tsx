@@ -1,4 +1,5 @@
 // app/post/[slug]/page.tsx
+import Link from "next/link";
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
@@ -31,9 +32,9 @@ export default async function PostPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
 
-      <a href="/" className="block mt-10 text-blue-600 underline">
+      <Link href="/" className="block mt-10 text-blue-600 underline">
         ← Back to home
-      </a>
+      </Link>
     </main>
   );
 }

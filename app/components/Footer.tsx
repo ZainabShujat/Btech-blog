@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-slate-900 text-white mt-16">
@@ -12,29 +14,36 @@ export default function Footer() {
 
         <div className="grid gap-8 md:grid-cols-3">
           <div className="text-slate-300 text-sm">
-            Join our community of students and tech folks. Weekly insights on tech, world events, and growth.
+            Reach me out on linkedIn : <a className="underline" href="https://www.linkedin.com/in/zainab-shujat-56b14928b/" target="_blank" rel="noreferrer">Zainab Shujat</a>
           </div>
+
           <div>
             <h4 className="font-semibold mb-2">Quick Links</h4>
             <ul className="space-y-1 text-slate-300 text-sm">
-              <li><a className="hover:text-white" href="/">Home</a></li>
-              <li><a className="hover:text-white" href="/about">About</a></li>
-              <li><a className="hover:text-white" href="/category/friday-insights">Friday Insights</a></li>
+              <li><Link className="hover:text-white" href="/">Home</Link></li>
+              <li><Link className="hover:text-white" href="/about">About</Link></li>
+              <li><Link className="hover:text-white" href="/category/friday-insights">Friday Insights</Link></li>
             </ul>
           </div>
+
           <div>
             <h4 className="font-semibold mb-2">Categories</h4>
             <ul className="space-y-1 text-slate-300 text-sm">
-              <li><a className="hover:text-white" href="/category/tech-pulse">Tech Pulse</a></li>
-              <li><a className="hover:text-white" href="/category/world-news">World Watch</a></li>
-              <li><a className="hover:text-white" href="/category/friday-insights">Friday Insights</a></li>
+              <li><Link className="hover:text-white" href="/category/tech-pulse">Tech Pulse</Link></li>
+              <li><Link className="hover:text-white" href="/category/world-news">World Watch</Link></li>
+              <li><Link className="hover:text-white" href="/category/friday-insights">Friday Insights</Link></li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-slate-700 mt-10 pt-6 text-slate-400 text-xs flex flex-col md:flex-row gap-2 md:justify-between">
           <span>© {new Date().getFullYear()} Notes From a B Tech Brain. All rights reserved.</span>
-          <span>Built with Next.js & Tailwind</span>
+          {/* External links can stay <a> */}
+          <span>
+            Built with{" "}
+            <a className="underline" href="https://nextjs.org" target="_blank" rel="noreferrer">Next.js</a> &{" "}
+            <a className="underline" href="https://tailwindcss.com" target="_blank" rel="noreferrer">Tailwind</a>
+          </span>
         </div>
       </div>
     </footer>
