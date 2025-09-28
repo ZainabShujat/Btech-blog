@@ -14,7 +14,7 @@ export default function Footer() {
 
         <div className="grid gap-8 md:grid-cols-3">
           <div className="text-slate-300 text-sm">
-            Reach me out on linkedIn : <a className="underline" href="https://www.linkedin.com/in/zainab-shujat-56b14928b/" target="_blank" rel="noreferrer">Zainab Shujat</a>
+            Reach me out on linkedIn : <Link className="underline" href="https://www.linkedin.com/in/zainab-shujat-56b14928b/" target="_blank" rel="noreferrer">Zainab Shujat</Link>
           </div>
 
           <div>

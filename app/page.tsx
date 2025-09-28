@@ -1,7 +1,8 @@
 import { getAllPosts } from "@/lib/posts";
 import Hero from "./components/Hero";
-import CategoryCard from "./components/CategoryCard";
+import CategoryCard from "./components/Categorycard";
 import PostCard from "./components/PostCard";
+import Link from "next/link";
 
 export default async function Home() {
   const posts = await getAllPosts();
@@ -63,9 +64,9 @@ export default async function Home() {
           {posts.length === 0 && (
             <p className="text-slate-600">
               No posts yet. Create one in{" "}
-              <a href="/admin" className="underline text-purple-600">
+              <Link href="/admin" className="underline text-purple-600">
                 /admin
-              </a>
+              </Link>
               .
             </p>
           )}

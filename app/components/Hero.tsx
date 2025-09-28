@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="relative w-full">
@@ -14,18 +16,18 @@ export default function Hero() {
         </p>
 
         <div className="mt-6 flex items-center justify-center gap-3">
-          <a
+          <Link
             href="#recent"
             className="rounded-md bg-white text-purple-700 px-4 py-2 font-medium"
           >
             Browse Articles
-          </a>
-          <a
+          </Link>
+          <Link
             href="/admin"
             className="rounded-md border border-white/70 px-4 py-2 font-medium"
           >
             Subscribe / Admin
-          </a>
+          </Link>
         </div>
 
         <div className="mt-6 text-xs text-white/80 flex items-center justify-center gap-4">
