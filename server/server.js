@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 const app = express();
 
 // --- connect to MongoDB Atlas ---
-const MONGO_URI = "mongodb+srv://zainabshujatali_db_user:Vd7dNDwkaKKPT58q@cluster0.ny94mj4.mongodb.net/?appName=Cluster0";
+const MONGO_URI = process.env.MONGO_URI;
 
 mongoose
   .connect(MONGO_URI)

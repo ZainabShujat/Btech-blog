@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[redirects]]
+  from = "/api/*"
+  to = "http://localhost:4000/:splat"
+  status = 200
