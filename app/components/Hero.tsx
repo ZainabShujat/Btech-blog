@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="relative w-full">
-      <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500" />
+      <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 via-blue-400 via-green-300 to-green-400" />
       <div className="relative mx-auto max-w-screen-xl px-4 sm:px-6 md:px-8 py-20 text-center text-white">
         <p className="inline-block rounded-full bg-white/15 px-3 py-1 text-xs tracking-wide">
           Weekly Newsletter
