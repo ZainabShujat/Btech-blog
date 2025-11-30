@@ -10,7 +10,9 @@ export type PostMeta = {
   date: string;
   category: string;
   excerpt?: string;
+  banner?: string;   // ⭐ NEW
 };
+
 
 export async function getAllPosts(): Promise<PostMeta[]> {
   try {
@@ -28,3 +30,18 @@ export async function getAllPosts(): Promise<PostMeta[]> {
     return [];
   }
 }
+export async function getLatestPerCategory(): Promise<PostMeta[]> {
+  const posts = await getAllPosts(); // already sorted newest → oldest
+
+  const seen = new Map<string, PostMeta>();
+
+  for (const p of posts) {
+    const cat = p.category.toLowerCase();
+    if (!seen.has(cat)) {
+      seen.set(cat, p); // first = latest
+    }
+  }
+
+  return Array.from(seen.values());
+}
+

@@ -7,11 +7,11 @@ import html from "remark-html";
 import Link from "next/link";
 
 type PageProps = {
-  params: Promise<{ slug: string }>; // 👈 Netlify/Next build expects Promise here
+  params: Promise<{ slug: string }>; // keep this if your build expects a Promise
 };
 
 export default async function Page({ params }: PageProps) {
-  const { slug } = await params; // 👈 await the promise
+  const { slug } = await params;
 
   const filePath = path.join(process.cwd(), "content", "posts", `${slug}.md`);
   if (!fs.existsSync(filePath)) return notFound();
@@ -29,8 +29,20 @@ export default async function Page({ params }: PageProps) {
         {new Date(data.date).toLocaleDateString()} · {data.category}
       </p>
 
+      {/* Banner (shows only if frontmatter has `banner`) */}
+      {data?.banner && (
+        <figure className="w-full overflow-hidden rounded-lg mb-6">
+          <img
+            src={data.banner}
+            alt={data.title || "post banner"}
+            className="w-full h-[360px] md:h-[420px] object-cover block mx-auto"
+            loading="lazy"
+          />
+        </figure>
+      )}
+
       <article
-        className="prose prose-slate mt-6"
+        className="prose prose-slate mt-6 max-w-none"
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
 

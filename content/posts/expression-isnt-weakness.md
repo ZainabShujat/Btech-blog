@@ -1,9 +1,10 @@
 ---
 title: "Expression Isn’t Weakness: It’s Wisdom"
-slug: expression-isnt-weakness
+slug: "expression-isnt-weakness"
 date: "2025-06-27"
 category: "friday-insights"
 excerpt: "Why vulnerability isn’t soft—it’s strategy."
+banner: "/assets/banners/expression.jpg"
 ---
 
 For the longest time, I thought keeping things in made me stronger. Maybe if I didn’t talk about what was hurting, it would pass faster. That if I just kept myself busy, moved on, acted “fine” — the weight would eventually lift.

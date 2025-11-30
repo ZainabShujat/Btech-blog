@@ -27,7 +27,7 @@ export default function Hero() {
         <div className="mt-6 text-xs text-white/80 flex items-center justify-center gap-4">
           <span>5+ categories</span>
           <span>•</span>
-          <span>27 editions</span>
+          <span>20+ editions</span>
           <span>•</span>
           <span>student POV</span>
         </div>
