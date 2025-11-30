@@ -22,12 +22,6 @@ export default function Hero() {
           >
             Browse Articles
           </Link>
-          <Link
-            href="/admin"
-            className="rounded-md border border-white/70 px-4 py-2 font-medium"
-          >
-            Subscribe / Admin
-          </Link>
         </div>
 
         <div className="mt-6 text-xs text-white/80 flex items-center justify-center gap-4">

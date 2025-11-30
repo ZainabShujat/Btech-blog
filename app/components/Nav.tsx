@@ -17,7 +17,6 @@ export default function Nav() {
           <Link href="/category/friday-insights" className="hover:underline">Friday Insights</Link>
           <Link href="/category/tech-pulse" className="hover:underline">Tech Pulse</Link>
           <Link href="/category/world-news" className="hover:underline">World Watch</Link>
-          <Link href="/admin" className="rounded border px-2 py-1">Admin</Link>
         </div>
       </nav>
     </header>
