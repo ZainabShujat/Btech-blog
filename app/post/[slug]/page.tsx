@@ -1,3 +1,4 @@
+// app/post/[slug]/page.tsx
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
@@ -7,7 +8,7 @@ import html from "remark-html";
 import Link from "next/link";
 
 type PageProps = {
-  params: Promise<{ slug: string }>; // keep this if your build expects a Promise
+  params: Promise<{ slug: string }>;
 };
 
 export default async function Page({ params }: PageProps) {
@@ -29,7 +30,6 @@ export default async function Page({ params }: PageProps) {
         {new Date(data.date).toLocaleDateString()} · {data.category}
       </p>
 
-      {/* Banner (shows only if frontmatter has `banner`) */}
       {data?.banner && (
         <figure className="w-full overflow-hidden rounded-lg mb-6">
           <img
