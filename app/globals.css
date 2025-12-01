@@ -24,3 +24,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* globals.css (or wherever your base styles are) */
+@layer base {
+  :root {
+    --heading: #0f172a; /* slate-900 */
+    --muted: #334155;   /* slate-600 */
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --heading: #f8fafc; /* slate-100 */
+      --muted: #94a3b8;   /* slate-300 */
+    }
+  }
+  h1,h2,h3,h4,h5 { color: var(--heading); }
+  p, li, small { color: var(--muted); }
+}
