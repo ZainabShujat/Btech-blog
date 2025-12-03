@@ -9,83 +9,24 @@ banner: "/assets/banners/letter-december-banner.jpg"
 
 Dear December 2024 Me,
 
-If I could sit beside you right now, the first thing I’d do is take your hand.  
-Not to comfort you like a child —  
-but to remind you that you’re not weak for feeling everything so heavily.
+If I could sit beside you right now, the first thing I’d do is take your hand — not to comfort you like a child, but to remind you that you’re not weak for feeling everything so heavily. You don’t know it yet, but you’re carrying a weight that was never yours, and you keep trying to make sense of emotions that were never meant to be handled alone.
 
-You don’t know it yet, but you’re carrying a weight that was never yours.
+You’ve convinced yourself you’re being dramatic. You think your sadness is a kind of personal failure. You believe you’ve “lost your spark,” as if sparks simply vanish when life becomes too heavy for them to burn. But you’re not broken — you’re exhausted. You’re surviving things you didn’t even have the vocabulary for yet. You wake up every day thinking it’s your fault that joy feels so far away, when in reality, you’ve been hurting for a long time and still choosing to move forward. That alone says more about your strength than anything else.
 
-I know you keep telling yourself you’re being dramatic.  
-I know you think your sadness is failure.  
-I know you believe you’ve “lost your spark,” as if sparks just disappear when life gets too heavy for them to burn.
+Right now, you feel stuck. It doesn’t look like it from the inside, but you’re standing at the beginning of a year that will change you in ways you cannot imagine. In a few months, you’ll start choosing yourself again. Not dramatically, not all at once — but in small, quiet ways that don’t look like healing until much later. You’ll step out of situations that drained you, and you’ll stop blaming yourself for things that weren’t your fault. You’ll learn what your boundaries feel like. You’ll talk more. You’ll cry more. You’ll breathe again.
 
-You’re not broken.  
-You’re exhausted.
+And eventually, you’ll start therapy — not because you’re “crazy,” but because you finally want your mind back. And slowly, gently, like sunlight after a long stretch of grey days, things begin to make sense again.
 
-You’re surviving things you didn’t even have the vocabulary for yet.  
-You’re waking up each day thinking it’s your fault you can’t feel joy the way you used to.
+The best part is that there’s no big turning point. No dramatic moment. You simply start becoming yourself again. You start writing — really writing. You start creating things. You begin showing up for yourself in ways you didn’t think you were capable of anymore. Your voice grows steadier. Your world expands. And the spark you were so convinced had disappeared quietly returns, exactly when you stop looking for it.
 
-But the truth is simple, and I wish you could see it:
+There will still be fear. You’ll worry about the future — placements, jobs, adulthood, losing your spark, losing time. You’ll think life will get too busy for you to remain yourself. But here’s what you learn by the end of this year: you’re not running out of time. You’re running ahead of it. The version of you writing this doesn’t shrink as life gets harder — she expands. She carries more, dreams more, feels more grounded. She becomes someone you didn’t know you could be.
 
-**You’re hurting — and you’re still moving.**  
-That alone is strength.
+I wish I could tell you everything this year holds for you — how proud you’ll be of the version of yourself who just kept trying, even when things felt pointless. You didn’t have answers back then. You didn’t understand your trauma. You didn’t have clarity. But you had courage — not the loud kind, but the quiet, steady kind it takes to get out of bed when your chest is heavy. That was enough to get you here.
 
-You think you’re stuck.  
-But you’re standing at the edge of a year that will change you in ways you can’t imagine.
+And now I’m standing on the other side of a year you survived one small step at a time — healthier, clearer, softer, wiser, and more myself than I’ve been in a long time. You made it through the hardest parts without even knowing they would end.
 
-In a few months, you’ll start choosing yourself again.  
-In small ways at first — tiny, quiet acts that won’t even look like healing.  
-But they are.
-
-You’ll step out of situations that drained you.  
-You’ll stop blaming yourself for things you didn’t cause.  
-You’ll learn what your boundaries feel like.  
-You’ll talk.  
-You’ll cry.  
-You’ll breathe.
-
-You’ll start therapy — not because you’re “crazy,” but because you finally want your mind back.  
-And it works, slowly, gently, like sunlight after weeks of grey weather.
-
-And then, without any dramatic moment or big revelation…  
-you find yourself again.
-
-You start writing — really writing.  
-You start creating.  
-You start showing up for yourself.  
-Your voice grows clearer.  
-Your world grows bigger.
-
-Your spark — the one you thought was dead — comes back exactly when you stop searching for it.
-
-I wish I could tell you everything that 2025 holds for you —  
-how proud you’ll become of the girl who never stopped trying, even when everything felt pointless.
-
-You didn’t have the answers.  
-You didn’t understand your trauma.  
-You didn’t have the clarity.  
-But you had courage —  
-the quiet kind that doesn’t look like bravery,  
-but feels like getting out of bed when your chest hurts.
-
-And that was enough.
-
-Because I’m here now.  
-On the other side of a year you survived one small step at a time.
-
-Healthier.  
-Clearer.  
-Softer.  
-Wiser.  
-More myself than I’ve been in a long time.
-
-You made it through the worst part without even knowing it would end.
-
-Thank you for not giving up on us.  
-Thank you for walking through the dark so I could stand in the light.
-
-I won’t forget what you carried.
+Thank you for not giving up on us. Thank you for carrying what you carried. Thank you for walking through the dark so I could finally stand somewhere lighter. I won’t forget your effort, even the parts you thought didn’t matter.
 
 With love,  
-**Me — at the end of 2025.**  
+**Me — at the end of 2025**  
 The version of you who finally remembers her own strength.
