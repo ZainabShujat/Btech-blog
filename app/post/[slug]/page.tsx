@@ -31,14 +31,13 @@ export default async function Page({ params }: PageProps) {
       </p>
 
       {data?.banner && (
-        <figure className="w-full overflow-hidden rounded-lg mb-6">
+        <figure className="w-full rounded-lg mb-6">
           <img
-  src={data.banner || ""}
-  alt={data.title}
-  className="w-full h-auto object-cover max-h-[48vh] rounded-lg mx-auto"
-  loading="lazy"
-/>
-
+            src={data.banner || ""}
+            alt={data.title}
+            className="w-full h-auto rounded-lg mx-auto"
+            loading="lazy"
+          />
         </figure>
       )}
 
