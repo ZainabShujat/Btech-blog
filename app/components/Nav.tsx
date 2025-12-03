@@ -22,8 +22,9 @@ export default function Nav() {
         <div className="hidden md:flex items-center gap-6 text-sm">
           <Link href="/" className="hover:underline">Home</Link>
           <Link href="/category/friday-insights" className="hover:underline">Friday Insights</Link>
-          <Link href="/category/tech-pulse" className="hover:underline">Tech Pulse</Link>
-          <Link href="/category/world-news" className="hover:underline">World Watch</Link>
+          <Link href="/category/milestone-stories" className="hover:underline">Milestone Stories</Link>
+          <Link href="/about" className="hover:underline">About</Link>
+
         </div>
 
         {/* Mobile hamburger */}
@@ -63,6 +64,8 @@ export default function Nav() {
       >
         <div className="px-4 pt-3 pb-4 space-y-2">
           <Link href="/" className="block py-2 px-2 rounded hover:bg-slate-50">Home</Link>
+          <Link href="/about" className="block py-2 px-2 rounded hover:bg-slate-50">About</Link>
+
           <Link href="/category/friday-insights" className="block py-2 px-2 rounded hover:bg-slate-50">Friday Insights</Link>
           <Link href="/category/tech-pulse" className="block py-2 px-2 rounded hover:bg-slate-50">Tech Pulse</Link>
           <Link href="/category/world-news" className="block py-2 px-2 rounded hover:bg-slate-50">World Watch</Link>
