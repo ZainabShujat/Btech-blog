@@ -25,42 +25,7 @@ const posts = await getLatestPerCategory();
         </p>
 
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <CategoryCard
-  color="border-blue-500"
-  title="Tech Demystified"
-  desc="Simplifying complex tech topics."
-  href="/category/tech-demystified"
-/>
-
-<CategoryCard
-  color="border-indigo-500"
-  title="World Watch"
-  desc="Weekly geopolitical summaries."
-  href="/category/world-watch"
-/>
-
-<CategoryCard
-  color="border-pink-500"
-  title="Tech Pulse"
-  desc="Latest technology trends."
-  href="/category/tech-pulse"
-/>
-
-<CategoryCard
-  color="border-amber-500"
-  title="July Crisis"
-  desc="A mini-series on student struggles."
-  href="/category/july-crisis"
-/>
-
-<CategoryCard
-  color="border-emerald-600"
-  title="Financial Month"
-  desc="Student stories on finance."
-  href="/category/financial-month"
-/>
-
-<CategoryCard
+         <CategoryCard
   color="border-purple-500"
   title="Friday Insights"
   desc="Reflections and personal growth."
@@ -68,14 +33,48 @@ const posts = await getLatestPerCategory();
 />
 
 <CategoryCard
-  color="border-rose-500"
+  color="border-pink-400"
+  title="World Watch"
+  desc="Weekly geopolitical summaries."
+  href="/category/world-watch"
+/>
+
+<CategoryCard
+  color="border-pink-300"
+  title="Tech Pulse"
+  desc="Latest technology trends."
+  href="/category/tech-pulse"
+/>
+
+<CategoryCard
+  color="border-amber-300"
+  title="July Crisis"
+  desc="A mini-series on student struggles."
+  href="/category/july-crisis"
+/>
+ <CategoryCard
+  color="border-amber-500"
+  title="Tech Demystified"
+  desc="Simplifying complex tech topics."
+  href="/category/tech-demystified"
+/>
+
+<CategoryCard
+  color="border-green-300"
+  title="Financial Month"
+  desc="Student stories on finance."
+  href="/category/financial-month"
+/>
+
+<CategoryCard
+  color="border-emerald-300"
   title="Milestone Stories"
   desc="Other notable posts and stories."
   href="/category/milestone-stories"
 />
 
 <CategoryCard
-  color="border-violet-500"
+  color="border-emerald-500"
   title="Girlhood and STEM Experiences"
   desc="A documentation of the vivid experiences of a girl in STEM."
   href="/category/girlhood-and-stem-experiences"
