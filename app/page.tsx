@@ -6,14 +6,17 @@ import Link from "next/link";
 import { getLatestPerCategory } from "@/lib/posts";
 
 export default async function Home() {
-  const posts = await getLatestPerCategory();
+ 
+
+const posts = await getLatestPerCategory();
+
 
   return (
     <main>
       <Hero />
 
       {/* Categories */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-12">
+      <section className="mx-auto max-w-screen-xl px-4 sm:px-6 md:px-8 py-12">
         <h2 className="text-center text-lg font-semibold">
           ✨ Explore <span className="text-purple-600">Categories</span>
         </h2>
@@ -70,7 +73,7 @@ export default async function Home() {
       {/* Recent Posts */}
       <section
         id="recent"
-        className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-12"
+        className="mx-auto max-w-screen-xl px-4 sm:px-6 md:px-8 py-12"
       >
         <h2 className="text-lg font-semibold">🗂️ Recent Posts</h2>
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
@@ -80,7 +83,8 @@ export default async function Home() {
               No posts yet. Create one in{" "}
               <Link href="/admin" className="underline text-purple-600">
                 /admin
-              </Link>.
+              </Link>
+              .
             </p>
           )}
           {posts.map((p) => (
