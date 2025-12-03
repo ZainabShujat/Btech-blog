@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script"; // <-- ADD THIS
 import "./globals.css";
 
 import Nav from "./components/Nav";
@@ -23,6 +24,23 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      {/* ✅ GOOGLE ANALYTICS SCRIPT */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-8ZSK26MSPG"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8ZSK26MSPG', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
+
       <body
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
