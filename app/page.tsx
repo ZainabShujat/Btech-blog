@@ -66,9 +66,9 @@ export default async function Home() {
 
 <CategoryCard
   color="border-emerald-300"
-  title="Milestone Stories"
+  title="Milestone Stories and Miscellaneous"
   desc="Other notable posts and stories."
-  href="/category/milestone-stories"
+  href="/category/milestone-stories-and-miscellaneous"
 />
 
 <CategoryCard

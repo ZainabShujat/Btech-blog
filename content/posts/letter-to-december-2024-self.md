@@ -2,7 +2,7 @@
 title: "To the Girl I Was Last December"
 slug: "letter-to-december-2024-self"
 date: "2025-12-30"
-category: "milestone-stories"
+category: "milestone-stories-and-miscellaneous"
 excerpt: "A gentle letter to the version of myself who thought she had lost her spark — and had no idea how much life was about to grow around her."
 banner: "/assets/banners/letter-december-banner.jpg"
 ---
