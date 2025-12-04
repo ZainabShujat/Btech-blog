@@ -11,7 +11,6 @@ export type PostMeta = {
   category: string;
   excerpt?: string;
   banner?: string;   // ⭐ NEW
-  [key: string]: unknown; // allow other fields without using `any`
 };
 
 
@@ -33,8 +32,8 @@ export async function getAllPosts(): Promise<PostMeta[]> {
 }
 // lib/posts.ts
 // Defensive getLatestPerCategory - handles missing category or categories array
-export function getLatestPerCategory(posts: Post[]): Post[] {
-  const seen = new Map<string, Post>();
+export function getLatestPerCategory(posts: Array<any>) {
+  const seen = new Map<string, any>();
 
   for (const p of posts) {
     // Normalize category:
