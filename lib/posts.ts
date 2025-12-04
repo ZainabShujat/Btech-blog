@@ -30,18 +30,40 @@ export async function getAllPosts(): Promise<PostMeta[]> {
     return [];
   }
 }
-export async function getLatestPerCategory(): Promise<PostMeta[]> {
-  const posts = await getAllPosts(); // already sorted newest → oldest
-
-  const seen = new Map<string, PostMeta>();
+// lib/posts.ts
+// Defensive getLatestPerCategory - handles missing category or categories array
+export function getLatestPerCategory(posts: Array<any>) {
+  const seen = new Map<string, any>();
 
   for (const p of posts) {
-    const cat = p.category.toLowerCase();
+    // Normalize category:
+    // - if frontmatter has `category` (string) use it
+    // - else if frontmatter has `categories` (array) use first element
+    // - else fallback to 'uncategorized'
+    let rawCat: any = undefined;
+
+    // p may already have normalized props, or store frontmatter in p.frontmatter
+    if (typeof p.category === "string" && p.category.trim() !== "") {
+      rawCat = p.category;
+    } else if (Array.isArray(p.categories) && p.categories.length > 0 && typeof p.categories[0] === "string") {
+      rawCat = p.categories[0];
+    } else if (p.frontmatter && typeof p.frontmatter.category === "string" && p.frontmatter.category.trim() !== "") {
+      rawCat = p.frontmatter.category;
+    } else if (p.frontmatter && Array.isArray(p.frontmatter.categories) && p.frontmatter.categories.length > 0 && typeof p.frontmatter.categories[0] === "string") {
+      rawCat = p.frontmatter.categories[0];
+    } else {
+      rawCat = "uncategorized";
+    }
+
+    const cat = String(rawCat).toLowerCase();
+
     if (!seen.has(cat)) {
-      seen.set(cat, p); // first = latest
+      seen.set(cat, p); // first encountered post (assumes posts sorted newest-first)
     }
   }
 
+  // return posts (latest per category) as an array preserving insertion order
   return Array.from(seen.values());
 }
+
 

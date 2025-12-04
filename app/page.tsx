@@ -1,16 +1,14 @@
-import { getAllPosts } from "@/lib/posts";
+import { getAllPosts, getLatestPerCategory } from "@/lib/posts";
 import Hero from "./components/Hero";
 import CategoryCard from "./components/CategoryCard";
 import PostCard from "./components/PostCard";
 import Link from "next/link";
-import { getLatestPerCategory } from "@/lib/posts";
 
 export default async function Home() {
  
-
-const posts = await getLatestPerCategory();
-
-
+ const allPosts = await getAllPosts();
+  const posts = getLatestPerCategory(allPosts); // <-- pass allPosts
+  
   return (
     <main>
       <Hero />

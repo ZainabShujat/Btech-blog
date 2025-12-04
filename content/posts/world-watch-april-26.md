@@ -4,10 +4,10 @@ slug: "world-watch-april-26"
 date: "2025-04-26"
 category: "world-watch"
 excerpt: "A weekly roundup of major geopolitical events — from Kashmir to Ukraine, global markets, and US trade policy."
-banner: "/assets/banners/worldwatch1.jpg"
+banner: "/assets/banners/worldwatch.jpg"
 ---
 
-## Welcome to World Watch
+# Welcome to World Watch
 
 Hello everyone, and welcome to the **very first World Watch** from *Notes From a B.Tech Brain*.  
 In this series, I’ll be breaking down major global updates — events that shape the world, moments that matter, and shifts we simply can’t ignore.
@@ -16,7 +16,7 @@ Let’s dive into this week’s headlines.
 
 ---
 
-## 1. Terror Attack in Pahalgam: India on High Alert
+# 1. Terror Attack in Pahalgam: India on High Alert
 
 A tragic attack occurred near **Pahalgam, Jammu & Kashmir**, where terrorists opened fire on an Indian Army convoy.  
 Three soldiers lost their lives, and several others were injured.
@@ -33,7 +33,7 @@ It’s heartbreaking to see violence repeatedly erode hopes for peace. Security 
 
 ---
 
-## 2. Water Tensions Rise Between India & Pakistan
+# 2. Water Tensions Rise Between India & Pakistan
 
 After the Pahalgam attack, India signaled potential changes to the **Indus Waters Treaty**, the historic water-sharing agreement between India and Pakistan.
 
@@ -47,7 +47,7 @@ Any shift here affects agriculture, drinking water access, and geopolitical stab
 
 ---
 
-## 3. Economic Fallout: Markets React to the Attack
+# 3. Economic Fallout: Markets React to the Attack
 
 The terror strike caused ripples across India’s financial markets.
 
@@ -59,7 +59,7 @@ If tensions escalate, the wider South Asian economy — trade, energy cooperatio
 
 ---
 
-## 4. Global Stock Markets Struggle Amid Economic Jitters
+# 4. Global Stock Markets Struggle Amid Economic Jitters
 
 Stock markets around the world have seen sharp declines this week.
 
@@ -74,7 +74,7 @@ These shifts remind us how interconnected — and fragile — the global economy
 
 ---
 
-## 5. Ukraine Conflict: The War Continues
+# 5. Ukraine Conflict: The War Continues
 
 Although media attention has reduced, the war in Ukraine continues relentlessly.
 
@@ -88,7 +88,7 @@ The world may look away, but the conflict is far from over.
 
 ---
 
-## 6. Trump's New Tariff Threats
+# 6. Trump's New Tariff Threats
 
 Former US President **Donald Trump** is back in the headlines with proposed **sweeping tariffs** if re-elected.
 
@@ -102,7 +102,7 @@ Investors worldwide are watching closely — US trade policy in 2025 could resha
 
 ---
 
-## Closing Thought
+# Closing Thought
 
 Some weeks remind us how delicate peace, stability, and prosperity truly are.  
 They’re never guaranteed — just carefully balanced.
