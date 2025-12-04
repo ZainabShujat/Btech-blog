@@ -68,7 +68,7 @@ export default function Nav() {
 
           <Link href="/category/friday-insights" className="block py-2 px-2 rounded hover:bg-slate-50">Friday Insights</Link>
           <Link href="/category/tech-pulse" className="block py-2 px-2 rounded hover:bg-slate-50">Tech Pulse</Link>
-          <Link href="/category/world-news" className="block py-2 px-2 rounded hover:bg-slate-50">World Watch</Link>
+          <Link href="/category/world-watch" className="block py-2 px-2 rounded hover:bg-slate-50">World Watch</Link>
         </div>
       </div>
     </header>
