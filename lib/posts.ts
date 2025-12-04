@@ -8,7 +8,7 @@ export type PostMeta = {
   title: string;
   slug: string;
   date: string;
-  category: string | null;
+  category: string;
   excerpt?: string;
   banner?: string;   // ⭐ NEW
   [key: string]: unknown; // allow other fields without using `any`
