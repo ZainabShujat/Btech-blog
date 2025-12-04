@@ -22,7 +22,7 @@ export default function Nav() {
         <div className="hidden md:flex items-center gap-6 text-sm">
           <Link href="/" className="hover:underline">Home</Link>
           <Link href="/category/friday-insights" className="hover:underline">Friday Insights</Link>
-          <Link href="/category/milestone-stories" className="hover:underline">Milestone Stories</Link>
+          <Link href="/category/milestone-stories-and-miscellaneous" className="hover:underline">Milestone Stories and Miscellaneous</Link>
           <Link href="/about" className="hover:underline">About</Link>
 
         </div>
