@@ -4,7 +4,7 @@ slug: "tech-pulse-apr-30-2025"
 date: "2025-04-30"
 category: "tech-pulse"
 excerpt: "Six key developments from the AI world this week — from DeepSeek-powered cars to India’s expanding AI education ecosystem."
-banner: "/assets/banners/techpulse.jpg"
+banner: "/assets/banners/techpulseai.jpg"
 ---
 
 Some weeks, it feels like AI moves more than we do — and this was one of them.  
