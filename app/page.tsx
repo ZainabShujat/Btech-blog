@@ -80,9 +80,9 @@ export default async function Home() {
 
 <CategoryCard
   color="border-blue-300"
-  title="Behind the build"
+  title="Behind the scenes"
   desc="A mini-series that shows behind the scenes of building projects."
-  href="/category/behind-the-build"
+  href="/category/behind-the-scenes"
 />
 
         </div>
