@@ -82,3 +82,5 @@ It started as a “Can I make a game in four hours?” question. But somewhere a
 I didn’t make Suika Lite for anyone else. I made it because I missed that feeling, the click of code turning into motion, the first moment when the screen stops being still.
 
 I eventually closed the tab, but my mind didn’t really stop running. There’s something addictive about seeing an idea survive your own doubt. I guess I’m still learning what that kind of curiosity does to a person.
+
+Also read: [Suika-Lite: The Aftermath](https://btechbrain.vercel.app/post/suika-lite-the-aftermath)
