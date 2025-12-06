@@ -7,7 +7,7 @@ excerpt: "What stayed after the fruits stopped falling — reflections, unexpect
 banner: "/assets/banners/suika2.jpg"
 ---
 
-In the last edition, I wrote about how Suika Lite came to life — a four-hour challenge that turned into a week of fruits, physics, and far too many browser tabs. This one’s about what stayed after the code stopped running.
+In the last edition, (can be read in the behind the scenes tab: The Making of suika lite) I wrote about how Suika Lite came to life — a four-hour challenge that turned into a week of fruits, physics, and far too many browser tabs. This one’s about what stayed after the code stopped running.
 
 ## What Stayed With Me
 

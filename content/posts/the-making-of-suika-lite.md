@@ -2,7 +2,7 @@
 title: "🍉 The Making of Suika Lite"
 slug: "the-making-of-suika-lite"
 date: "2025-10-22"
-category: "milestone-stories-and-miscellaneous"
+category: "behind-the-scenes"
 excerpt: "A four-hour curiosity turned into a full physics-based mini-game — built from scratch with hand-drawn fruits, chaotic bugs, and Zee-style stubbornness."
 banner: "/assets/banners/suika1.jpg"
 ---
