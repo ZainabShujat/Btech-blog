@@ -78,6 +78,13 @@ export default async function Home() {
   href="/category/girlhood-and-stem-experiences"
 />
 
+<CategoryCard
+  color="border-blue-300"
+  title="Behind the build"
+  desc="A mini-series that shows behind the scenes of building projects."
+  href="/category/behind-the-build"
+/>
+
         </div>
       </section>
 
