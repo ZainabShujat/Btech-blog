@@ -3,7 +3,7 @@ title: "What I’m Afraid You’ll See If I Stop"
 slug: post-milestone
 date: "2025-12-10"
 category: "milestone-stories-and-miscellaneous"
-excerpt: "Hitting 50 editions was big. Everyone DMed me with lovely texts. But I couldnt stop and celebrate and jumped to the next task. Am I afraid of something? "
+excerpt: "Hitting 50 editions was big.Instead of pausing, i panicked. Am I afraid of something? "
 banner: "/assets/banners/50theditionaftermath.png"
 ---
 
