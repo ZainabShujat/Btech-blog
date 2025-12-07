@@ -1,3 +1,4 @@
+---
 title: "What I’m Afraid You’ll See If I Stop"
 slug: 50th-edition-aftermath
 date: "2025-12-10"
@@ -7,6 +8,7 @@ excerpt: "Hitting 50 editions felt big. But then came this tiny panic:
  “What if people only stay when I’m producing something? 
  Am I being fake?”
 banner: "/assets/banners/50theditionaftermath.png"
+---
 
 Everyone keeps asking how I stayed consistent. How I wrote for seven months. How I built things one after another. How I managed the pace, the output, the discipline.
 
