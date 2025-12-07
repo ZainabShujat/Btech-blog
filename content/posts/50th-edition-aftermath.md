@@ -3,10 +3,7 @@ title: "What I’m Afraid You’ll See If I Stop"
 slug: 50th-edition-aftermath
 date: "2025-12-10"
 category: "milestone-stories-and-miscellaneous"
-excerpt: "Hitting 50 editions felt big. But then came this tiny panic:
- “What if I stop now and everyone disappears?”
- “What if people only stay when I’m producing something? 
- Am I being fake?”
+excerpt: "Hitting 50 editions felt big. But then came this tiny panic:  “What if I stop now and everyone disappears?” “What if people only stay when I’m producing something? Am I being fake?”
 banner: "/assets/banners/50theditionaftermath.png"
 ---
 
