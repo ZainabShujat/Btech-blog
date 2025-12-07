@@ -13,13 +13,13 @@ They think it’s passion. Or ambition. Or some impressive sense of self-control
 
 But the truth is… I didn’t start because I wanted to be a writer.
 
-I started because I wanted to be seen. Not for how I looked. Not for how social I was. Not for how “fun” I seemed. I wanted to be seen in my thoughts — the only place I’ve ever truly lived.
+I started because I wanted to be seen. Not for how I looked. Not for how social I was. Not for how “fun” I seemed. I wanted to be seen in my thoughts, the only place I’ve ever truly lived.
 
-I started writing because I was the loneliest I had ever been. I wasn’t the fun friend people invited everywhere. I wasn’t the cool one everyone gravitated toward. But I also wasn’t letting myself be the full nerd I actually am. I was stuck between versions of myself — and invisible in both.
+I started writing because I was the loneliest I had ever been. I wasn’t the fun friend people invited everywhere. I wasn’t the cool one everyone gravitated toward. But I also wasn’t letting myself be the full nerd I actually am. I was stuck between versions of myself, and invisible in both.
 
 So I wrote. Because at least the page didn’t get bored of me. At least the page didn’t drift away.
 
-And now that I’m actually being seen... now that my posts travel, my DMs fill, my work has reach, my voice has weight —
+And now that I’m actually being seen... now that my posts travel, my DMs fill, my work has reach, my voice has weight-
 
 I’m freaking out.
 
