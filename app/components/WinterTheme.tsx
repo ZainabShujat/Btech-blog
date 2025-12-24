@@ -47,7 +47,7 @@ export default function WinterTheme() {
       <style jsx global>{`
         /* Winter theme color overrides */
         body {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+          background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 50%, #7dd3fc 100%) !important;
           background-attachment: fixed;
           padding-top: 50px !important;
         }
@@ -63,10 +63,98 @@ export default function WinterTheme() {
         .border-emerald-500,
         .border-blue-300,
         .border-blue-400 {
-          background: rgba(255, 255, 255, 0.95) !important;
-          backdrop-filter: blur(10px);
-          border: 2px solid rgba(255, 255, 255, 0.3) !important;
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+          background: linear-gradient(135deg, 
+            rgba(255, 255, 255, 0.9), 
+            rgba(240, 249, 255, 0.85),
+            rgba(255, 255, 255, 0.9)) !important;
+          backdrop-filter: blur(16px);
+          border: 2px solid rgba(186, 230, 253, 0.7) !important;
+          box-shadow: 
+            0 8px 32px rgba(14, 165, 233, 0.15),
+            0 4px 16px rgba(125, 211, 252, 0.2),
+            inset 0 2px 4px rgba(255, 255, 255, 1),
+            inset -2px -2px 8px rgba(186, 230, 253, 0.4) !important;
+          position: relative;
+          overflow: hidden;
+          transition: all 0.3s ease;
+        }
+
+        .border-purple-500::before,
+        .border-pink-400::before,
+        .border-pink-300::before,
+        .border-amber-300::before,
+        .border-amber-500::before,
+        .border-green-300::before,
+        .border-emerald-300::before,
+        .border-emerald-500::before,
+        .border-blue-300::before,
+        .border-blue-400::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: 
+            radial-gradient(circle at 20% 30%, rgba(186, 230, 253, 0.3) 0%, transparent 50%),
+            radial-gradient(circle at 80% 70%, rgba(125, 211, 252, 0.2) 0%, transparent 50%),
+            radial-gradient(circle at 50% 50%, rgba(224, 242, 254, 0.15) 0%, transparent 60%);
+          pointer-events: none;
+          opacity: 0.6;
+        }
+
+        .border-purple-500::after,
+        .border-pink-400::after,
+        .border-pink-300::after,
+        .border-amber-300::after,
+        .border-amber-500::after,
+        .border-green-300::after,
+        .border-emerald-300::after,
+        .border-emerald-500::after,
+        .border-blue-300::after,
+        .border-blue-400::after {
+          content: '❄';
+          position: absolute;
+          top: 8px;
+          right: 8px;
+          font-size: 20px;
+          opacity: 0.2;
+          color: #0ea5e9;
+          pointer-events: none;
+          animation: crystallize 4s ease-in-out infinite;
+        }
+
+        .border-purple-500:hover,
+        .border-pink-400:hover,
+        .border-pink-300:hover,
+        .border-amber-300:hover,
+        .border-amber-500:hover,
+        .border-green-300:hover,
+        .border-emerald-300:hover,
+        .border-emerald-500:hover,
+        .border-blue-300:hover,
+        .border-blue-400:hover {
+          background: linear-gradient(135deg, 
+            rgba(255, 255, 255, 0.95), 
+            rgba(224, 242, 254, 0.9),
+            rgba(255, 255, 255, 0.95)) !important;
+          box-shadow: 
+            0 12px 40px rgba(14, 165, 233, 0.25),
+            0 6px 20px rgba(125, 211, 252, 0.3),
+            inset 0 2px 6px rgba(255, 255, 255, 1),
+            inset -2px -2px 10px rgba(186, 230, 253, 0.5) !important;
+          transform: translateY(-2px);
+        }
+
+        @keyframes crystallize {
+          0%, 100% {
+            opacity: 0.2;
+            transform: rotate(0deg);
+          }
+          50% {
+            opacity: 0.4;
+            transform: rotate(15deg);
+          }
         }
       `}</style>
 
@@ -78,12 +166,12 @@ export default function WinterTheme() {
           left: 0;
           right: 0;
           width: 100%;
-          background: linear-gradient(90deg, #1e3a8a, #3b82f6, #1e3a8a);
+          background: linear-gradient(90deg, #0ea5e9, #38bdf8, #0ea5e9);
           color: white;
           padding: 12px 20px;
           text-align: center;
           z-index: 10000;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
           animation: shimmer 3s ease-in-out infinite;
         }
 
