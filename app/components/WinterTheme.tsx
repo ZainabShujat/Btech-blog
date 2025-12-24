@@ -233,10 +233,16 @@ export default function WinterTheme() {
         .snowflake {
           position: absolute;
           top: -20px;
-          color: white;
-          text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+          color: #f0f9ff;
+          font-size: 18px;
+          text-shadow: 
+            0 0 10px rgba(14, 165, 233, 0.9),
+            0 0 20px rgba(56, 189, 248, 0.7),
+            0 0 5px rgba(255, 255, 255, 1),
+            2px 2px 4px rgba(14, 116, 144, 0.6);
           animation: fall linear infinite;
-          opacity: 0.8;
+          opacity: 0.95;
+          filter: drop-shadow(0 0 8px rgba(14, 165, 233, 0.6));
         }
 
         @keyframes fall {
