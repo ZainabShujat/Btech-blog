@@ -5,6 +5,10 @@ import "./globals.css";
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import WinterTheme from "./components/WinterTheme";
+import DiwaliTheme from "./components/DiwaliTheme";
+import EidTheme from "./components/EidTheme";
+import HoliTheme from "./components/HoliTheme";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,6 +49,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <WinterTheme />
+        <DiwaliTheme />
+        <EidTheme />
+        <HoliTheme />
         <Nav />
         {children}
         <Footer />
