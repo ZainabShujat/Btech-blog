@@ -26,7 +26,7 @@ export default function WinterTheme() {
       </div>
 
       {/* Snowflakes */}
-      <div className="snowfall" aria-hidden="true">
+      <div className="snowfall" aria-hidden="true" suppressHydrationWarning>
         {Array.from({ length: 50 }).map((_, i) => (
           <div
             key={i}
@@ -37,6 +37,7 @@ export default function WinterTheme() {
               animationDelay: `${Math.random() * 5}s`,
               fontSize: `${Math.random() * 10 + 10}px`,
             }}
+            suppressHydrationWarning
           >
             ❄
           </div>
@@ -48,6 +49,7 @@ export default function WinterTheme() {
         body {
           background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
           background-attachment: fixed;
+          padding-top: 50px !important;
         }
 
         /* Add frost effect to cards */
@@ -59,7 +61,8 @@ export default function WinterTheme() {
         .border-green-300,
         .border-emerald-300,
         .border-emerald-500,
-        .border-blue-300 {
+        .border-blue-300,
+        .border-blue-400 {
           background: rgba(255, 255, 255, 0.95) !important;
           backdrop-filter: blur(10px);
           border: 2px solid rgba(255, 255, 255, 0.3) !important;

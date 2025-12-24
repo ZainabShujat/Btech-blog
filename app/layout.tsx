@@ -7,6 +7,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import WinterTheme from "./components/WinterTheme";
 import EidTheme from "./components/EidTheme";
+import BirthdayTheme from "./components/BirthdayTheme";
 import EngineersDayTheme from "./components/EngineersDayTheme";
 import DoctorsDayTheme from "./components/DoctorsDayTheme";
 import MentalHealthDayTheme from "./components/MentalHealthDayTheme";
@@ -60,6 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       >
         <WinterTheme />
         <EidTheme />
+        <BirthdayTheme />
         <EngineersDayTheme />
         <DoctorsDayTheme />
         <MentalHealthDayTheme />

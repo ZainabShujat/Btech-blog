@@ -49,8 +49,8 @@ export default function FriendshipDayTheme() {
           color: #fff !important;
         }
 
-        body > * p:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *),
-        body > * span:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *) {
+        body > * p:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *, .border-blue-400 *),
+        body > * span:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *, .border-blue-400 *) {
           color: #f8f9fa !important;
         }
 
@@ -62,7 +62,8 @@ export default function FriendshipDayTheme() {
         .border-green-300,
         .border-emerald-300,
         .border-emerald-500,
-        .border-blue-300 {
+        .border-blue-300,
+        .border-blue-400 {
           background: rgba(255, 255, 255, 0.98) !important;
           backdrop-filter: blur(10px);
           border: 2px solid #ffd89b !important;
@@ -77,7 +78,8 @@ export default function FriendshipDayTheme() {
         .border-green-300 *,
         .border-emerald-300 *,
         .border-emerald-500 *,
-        .border-blue-300 * {
+        .border-blue-300 *,
+        .border-blue-400 * {
           color: #19547b !important;
         }
       `}</style>

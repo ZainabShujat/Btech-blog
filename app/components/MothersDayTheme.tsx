@@ -54,7 +54,8 @@ export default function MothersDayTheme() {
         .border-green-300,
         .border-emerald-300,
         .border-emerald-500,
-        .border-blue-300 {
+        .border-blue-300,
+        .border-blue-400 {
           background: rgba(255, 255, 255, 0.98) !important;
           backdrop-filter: blur(10px);
           border: 2px solid #ec407a !important;
@@ -69,7 +70,8 @@ export default function MothersDayTheme() {
         .border-green-300 *,
         .border-emerald-300 *,
         .border-emerald-500 *,
-        .border-blue-300 * {
+        .border-blue-300 *,
+        .border-blue-400 * {
           color: #880e4f !important;
         }
       `}</style>

@@ -49,8 +49,8 @@ export default function EngineersDayTheme() {
           background-attachment: fixed;
         }
 
-        body > * p:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *),
-        body > * span:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *) {
+        body > * p:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *, .border-blue-400 *),
+        body > * span:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *, .border-blue-400 *) {
           color: #a0d2eb !important;
         }
 
@@ -62,7 +62,8 @@ export default function EngineersDayTheme() {
         .border-green-300,
         .border-emerald-300,
         .border-emerald-500,
-        .border-blue-300 {
+        .border-blue-300,
+        .border-blue-400 {
           background: rgba(30, 30, 46, 0.95) !important;
           backdrop-filter: blur(10px);
           border: 1px solid #00ff41 !important;
@@ -77,7 +78,8 @@ export default function EngineersDayTheme() {
         .border-green-300 *,
         .border-emerald-300 *,
         .border-emerald-500 *,
-        .border-blue-300 * {
+        .border-blue-300 *,
+        .border-blue-400 * {
           color: #a0d2eb !important;
         }
       `}</style>

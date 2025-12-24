@@ -73,8 +73,8 @@ export default function EidTheme() {
           color: #f5e6d3 !important;
         }
 
-        body > * p:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *, .border-amber-500 *, .border-green-300 *, .border-emerald-300 *, .border-emerald-500 *, .border-blue-300 *),
-        body > * span:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *, .border-amber-500 *, .border-green-300 *, .border-emerald-300 *, .border-emerald-500 *, .border-blue-300 *) {
+        body > * p:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *, .border-amber-500 *, .border-green-300 *, .border-emerald-300 *, .border-emerald-500 *, .border-blue-300 *, .border-blue-400 *),
+        body > * span:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *, .border-amber-500 *, .border-green-300 *, .border-emerald-300 *, .border-emerald-500 *, .border-blue-300 *, .border-blue-400 *) {
           color: #e8d7b8 !important;
         }
 
@@ -87,7 +87,8 @@ export default function EidTheme() {
         .border-green-300,
         .border-emerald-300,
         .border-emerald-500,
-        .border-blue-300 {
+        .border-blue-300,
+        .border-blue-400 {
           background: rgba(255, 255, 255, 0.97) !important;
           backdrop-filter: blur(12px);
           border: 1px solid rgba(212, 175, 55, 0.4) !important;
@@ -169,7 +170,15 @@ export default function EidTheme() {
         .border-blue-300 h5,
         .border-blue-300 p,
         .border-blue-300 span,
-        .border-blue-300 a {
+        .border-blue-300 a,
+        .border-blue-400 h1,
+        .border-blue-400 h2,
+        .border-blue-400 h3,
+        .border-blue-400 h4,
+        .border-blue-400 h5,
+        .border-blue-400 p,
+        .border-blue-400 span,
+        .border-blue-400 a {
           color: #1a1a1a !important;
         }
       `}</style>

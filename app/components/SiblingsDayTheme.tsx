@@ -53,7 +53,8 @@ export default function SiblingsDayTheme() {
         .border-green-300,
         .border-emerald-300,
         .border-emerald-500,
-        .border-blue-300 {
+        .border-blue-300,
+        .border-blue-400 {
           background: rgba(255, 255, 255, 0.98) !important;
           backdrop-filter: blur(10px);
           border: 2px solid #ff6b6b !important;
@@ -68,7 +69,8 @@ export default function SiblingsDayTheme() {
         .border-green-300 *,
         .border-emerald-300 *,
         .border-emerald-500 *,
-        .border-blue-300 * {
+        .border-blue-300 *,
+        .border-blue-400 * {
           color: #d63031 !important;
         }
       `}</style>

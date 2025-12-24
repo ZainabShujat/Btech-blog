@@ -42,8 +42,8 @@ export default function MentalHealthDayTheme() {
           color: #2e7d32 !important;
         }
 
-        body > * p:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *),
-        body > * span:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *) {
+        body > * p:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *, .border-blue-400 *),
+        body > * span:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *, .border-blue-400 *) {
           color: #388e3c !important;
         }
 
@@ -55,7 +55,8 @@ export default function MentalHealthDayTheme() {
         .border-green-300,
         .border-emerald-300,
         .border-emerald-500,
-        .border-blue-300 {
+        .border-blue-300,
+        .border-blue-400 {
           background: rgba(255, 255, 255, 0.95) !important;
           backdrop-filter: blur(10px);
           border: 2px solid #81c784 !important;
@@ -70,7 +71,8 @@ export default function MentalHealthDayTheme() {
         .border-green-300 *,
         .border-emerald-300 *,
         .border-emerald-500 *,
-        .border-blue-300 * {
+        .border-blue-300 *,
+        .border-blue-400 * {
           color: #2e7d32 !important;
         }
       `}</style>

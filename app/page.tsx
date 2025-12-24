@@ -7,7 +7,7 @@ import Link from "next/link";
 export default async function Home() {
  
  const allPosts = await getAllPosts();
-  const posts = getLatestPerCategory(allPosts); // <-- pass allPosts
+  const posts = allPosts.slice(0, 3); // Get latest 3 posts by date
   
   return (
     <main>
@@ -83,6 +83,13 @@ export default async function Home() {
   title="Behind the scenes"
   desc="A mini-series that shows behind the scenes of building projects."
   href="/category/behind-the-scenes"
+/>
+
+<CategoryCard
+  color="border-blue-400"
+  title="Curiosity Series"
+  desc="Exploring questions, ideas, and the joy of learning."
+  href="/category/curiosity-series"
 />
 
         </div>
