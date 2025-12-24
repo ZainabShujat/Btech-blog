@@ -20,7 +20,7 @@ export default function WinterTheme() {
       <div className="winter-banner">
         <div className="banner-content">
           <span className="banner-emoji">❄️</span>
-          <span className="banner-text">Happy Holidays! Wishing you a magical season ✨</span>
+          <span className="banner-text">Happy Holidays! Wishing you a magical season & a Happy New Year✨</span>
           <span className="banner-emoji">🎄</span>
         </div>
       </div>
