@@ -73,8 +73,8 @@ export default function EidTheme() {
           color: #f5e6d3 !important;
         }
 
-        body > * p:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *),
-        body > * span:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *) {
+        body > * p:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *, .border-amber-500 *, .border-green-300 *, .border-emerald-300 *, .border-emerald-500 *, .border-blue-300 *),
+        body > * span:not(.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *, .border-amber-500 *, .border-green-300 *, .border-emerald-300 *, .border-emerald-500 *, .border-blue-300 *) {
           color: #e8d7b8 !important;
         }
 
@@ -82,7 +82,12 @@ export default function EidTheme() {
         .border-purple-500,
         .border-pink-400,
         .border-pink-300,
-        .border-amber-300 {
+        .border-amber-300,
+        .border-amber-500,
+        .border-green-300,
+        .border-emerald-300,
+        .border-emerald-500,
+        .border-blue-300 {
           background: rgba(255, 255, 255, 0.97) !important;
           backdrop-filter: blur(12px);
           border: 1px solid rgba(212, 175, 55, 0.4) !important;
@@ -124,7 +129,47 @@ export default function EidTheme() {
         .border-amber-300 h5,
         .border-amber-300 p,
         .border-amber-300 span,
-        .border-amber-300 a {
+        .border-amber-300 a,
+        .border-amber-500 h1,
+        .border-amber-500 h2,
+        .border-amber-500 h3,
+        .border-amber-500 h4,
+        .border-amber-500 h5,
+        .border-amber-500 p,
+        .border-amber-500 span,
+        .border-amber-500 a,
+        .border-green-300 h1,
+        .border-green-300 h2,
+        .border-green-300 h3,
+        .border-green-300 h4,
+        .border-green-300 h5,
+        .border-green-300 p,
+        .border-green-300 span,
+        .border-green-300 a,
+        .border-emerald-300 h1,
+        .border-emerald-300 h2,
+        .border-emerald-300 h3,
+        .border-emerald-300 h4,
+        .border-emerald-300 h5,
+        .border-emerald-300 p,
+        .border-emerald-300 span,
+        .border-emerald-300 a,
+        .border-emerald-500 h1,
+        .border-emerald-500 h2,
+        .border-emerald-500 h3,
+        .border-emerald-500 h4,
+        .border-emerald-500 h5,
+        .border-emerald-500 p,
+        .border-emerald-500 span,
+        .border-emerald-500 a,
+        .border-blue-300 h1,
+        .border-blue-300 h2,
+        .border-blue-300 h3,
+        .border-blue-300 h4,
+        .border-blue-300 h5,
+        .border-blue-300 p,
+        .border-blue-300 span,
+        .border-blue-300 a {
           color: #1a1a1a !important;
         }
       `}</style>

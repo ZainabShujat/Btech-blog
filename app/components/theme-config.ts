@@ -11,8 +11,20 @@
  */
 
 export const THEME_CONFIG = {
-  winter: true,   // ❄️ Christmas/New Year theme
-  diwali: false,  // 🪔 Diwali theme
-  eid: false,     // 🌙 Eid theme
-  holi: false,    // 🎨 Holi theme
-};
+  // Festival Themes
+  winter: false,         // ❄️ Christmas/New Year theme
+  eid: false,            // 🌙 Eid theme
+  
+  // Special Day Themes
+  engineersDay: false,   // 💻 Engineers Day (Sept 15)
+  doctorsDay: false,     // 🩺 Doctors Day (July 1)
+  mentalHealthDay: false,// 🧠 Mental Health Day (Oct 10)
+  teachersDay: false,    // 📚 Teachers Day (Sept 5)
+  womensDay: false,      // 💜 International Women's Day (March 8)
+  mothersDay: false,     // 🌹 Mother's Day (2nd Sunday of May)
+  fathersDay: false,     // 👔 Father's Day (3rd Sunday of June)
+  siblingsDay: false,    // 👫 Siblings Day (April 10)
+  earthDay: false,       // 🌍 Earth Day (April 22)
+  friendshipDay: false,  // 🤝 Friendship Day (1st Sunday of August)
+  newYearsDay: false,    // 🎊 New Year's Day (Jan 1)
+}

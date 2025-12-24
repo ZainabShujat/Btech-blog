@@ -1,0 +1,154 @@
+/**
+ * TEACHERS DAY THEME
+ * 
+ * 📚 TO CONTROL THIS THEME:
+ * Edit app/components/theme-config.ts and set teachersDay to true/false
+ */
+
+'use client';
+
+import { THEME_CONFIG } from './theme-config';
+
+export default function TeachersDayTheme() {
+  const isEnabled = THEME_CONFIG.teachersDay;
+
+  if (!isEnabled) return null;
+
+  return (
+    <>
+      {/* Banner */}
+      <div className="teachers-banner">
+        <div className="banner-content">
+          <span className="icon">📚</span>
+          <span className="banner-text">Happy Teachers Day — Thank you for lighting the path of knowledge</span>
+          <span className="icon">✏️</span>
+        </div>
+      </div>
+
+      {/* Floating Educational Symbols */}
+      <div className="education-particles" aria-hidden="true">
+        {['📖', '✏️', '📝', '🎓', '💡', '📚', '🖊️'].map((symbol, i) => (
+          <div
+            key={i}
+            className="edu-symbol"
+            style={{
+              left: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 3}s`,
+              animationDuration: `${8 + Math.random() * 4}s`,
+            }}
+          >
+            {symbol}
+          </div>
+        ))}
+      </div>
+
+      <style jsx global>{`
+        body {
+          background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 50%, #ffcc80 100%) !important;
+          background-attachment: fixed;
+        }
+
+        .border-purple-500,
+        .border-pink-400,
+        .border-pink-300,
+        .border-amber-300,
+        .border-amber-500,
+        .border-green-300,
+        .border-emerald-300,
+        .border-emerald-500,
+        .border-blue-300 {
+          background: rgba(255, 255, 255, 0.98) !important;
+          backdrop-filter: blur(10px);
+          border: 2px solid #ff9800 !important;
+          box-shadow: 0 4px 20px rgba(255, 152, 0, 0.2) !important;
+        }
+
+        .border-purple-500 *,
+        .border-pink-400 *,
+        .border-pink-300 *,
+        .border-amber-300 *,
+        .border-amber-500 *,
+        .border-green-300 *,
+        .border-emerald-300 *,
+        .border-emerald-500 *,
+        .border-blue-300 * {
+          color: #e65100 !important;
+        }
+      `}</style>
+
+      <style jsx>{`
+        .teachers-banner {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          background: linear-gradient(90deg, #f57c00, #ff9800, #f57c00);
+          background-size: 200% 100%;
+          color: white;
+          padding: 14px 20px;
+          text-align: center;
+          z-index: 10000;
+          animation: slide 5s linear infinite;
+        }
+
+        .banner-content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 16px;
+          font-size: 15px;
+          font-weight: 500;
+        }
+
+        .icon {
+          font-size: 22px;
+          animation: bounce-icon 2s ease-in-out infinite;
+        }
+
+        @keyframes slide {
+          0%, 100% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+        }
+
+        @keyframes bounce-icon {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-5px); }
+        }
+
+        :global(body) {
+          padding-top: 50px !important;
+        }
+
+        .education-particles {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          z-index: 1;
+          overflow: hidden;
+        }
+
+        .edu-symbol {
+          position: absolute;
+          font-size: 28px;
+          opacity: 0.5;
+          animation: rise linear infinite;
+        }
+
+        @keyframes rise {
+          0% {
+            transform: translateY(100vh) rotate(0deg);
+            opacity: 0;
+          }
+          10%, 90% { opacity: 0.5; }
+          100% {
+            transform: translateY(-10vh) rotate(180deg);
+            opacity: 0;
+          }
+        }
+      `}</style>
+    </>
+  );
+}

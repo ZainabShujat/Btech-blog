@@ -54,7 +54,12 @@ export default function WinterTheme() {
         .border-purple-500,
         .border-pink-400,
         .border-pink-300,
-        .border-amber-300 {
+        .border-amber-300,
+        .border-amber-500,
+        .border-green-300,
+        .border-emerald-300,
+        .border-emerald-500,
+        .border-blue-300 {
           background: rgba(255, 255, 255, 0.95) !important;
           backdrop-filter: blur(10px);
           border: 2px solid rgba(255, 255, 255, 0.3) !important;
@@ -69,11 +74,12 @@ export default function WinterTheme() {
           top: 0;
           left: 0;
           right: 0;
+          width: 100%;
           background: linear-gradient(90deg, #1e3a8a, #3b82f6, #1e3a8a);
           color: white;
           padding: 12px 20px;
           text-align: center;
-          z-index: 9998;
+          z-index: 10000;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
           animation: shimmer 3s ease-in-out infinite;
         }
@@ -85,6 +91,8 @@ export default function WinterTheme() {
           gap: 12px;
           font-size: 16px;
           font-weight: 600;
+          margin: 0 auto;
+          max-width: 1200px;
         }
 
         .banner-emoji {

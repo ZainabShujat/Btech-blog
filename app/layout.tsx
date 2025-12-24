@@ -6,9 +6,18 @@ import "./globals.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import WinterTheme from "./components/WinterTheme";
-import DiwaliTheme from "./components/DiwaliTheme";
 import EidTheme from "./components/EidTheme";
-import HoliTheme from "./components/HoliTheme";
+import EngineersDayTheme from "./components/EngineersDayTheme";
+import DoctorsDayTheme from "./components/DoctorsDayTheme";
+import MentalHealthDayTheme from "./components/MentalHealthDayTheme";
+import TeachersDayTheme from "./components/TeachersDayTheme";
+import WomensDayTheme from "./components/WomensDayTheme";
+import MothersDayTheme from "./components/MothersDayTheme";
+import FathersDayTheme from "./components/FathersDayTheme";
+import SiblingsDayTheme from "./components/SiblingsDayTheme";
+import EarthDayTheme from "./components/EarthDayTheme";
+import FriendshipDayTheme from "./components/FriendshipDayTheme";
+import NewYearsDayTheme from "./components/NewYearsDayTheme";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -50,9 +59,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <WinterTheme />
-        <DiwaliTheme />
         <EidTheme />
-        <HoliTheme />
+        <EngineersDayTheme />
+        <DoctorsDayTheme />
+        <MentalHealthDayTheme />
+        <TeachersDayTheme />
+        <WomensDayTheme />
+        <MothersDayTheme />
+        <FathersDayTheme />
+        <SiblingsDayTheme />
+        <EarthDayTheme />
+        <FriendshipDayTheme />
+        <NewYearsDayTheme />
         <Nav />
         {children}
         <Footer />
