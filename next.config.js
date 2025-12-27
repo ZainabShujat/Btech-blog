@@ -1,7 +1,8 @@
 /** next.config.js */
 module.exports = {
   // No experimental turbopack key!
-  webpack: (config) => {
-    return config;
-  },
+    turbopack: {}, // Silences Turbopack warning per Next.js docs
+    webpack: (config) => {
+      return config;
+    },
 };
