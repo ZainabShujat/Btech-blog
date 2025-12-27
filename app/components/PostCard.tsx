@@ -1,6 +1,7 @@
 // app/components/PostCard.tsx
 import Link from "next/link";
 import React from "react";
+import ArticleStats from "./ArticleStats";
 
 type Props = {
   title: string;
@@ -40,7 +41,8 @@ export default function PostCard({ title, slug, excerpt, date, category, banner 
 
         {excerpt && <p className="text-slate-600 mt-2">{excerpt}</p>}
 
-        <div className="mt-4">
+        <div className="flex items-center justify-between mt-4">
+          <ArticleStats slug={slug} />
           <Link
             href={`/post/${slug}`}
             className="inline-block text-sm font-medium text-purple-600 underline"
