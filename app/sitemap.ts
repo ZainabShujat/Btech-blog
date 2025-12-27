@@ -1,10 +1,10 @@
 import { MetadataRoute } from 'next';
-import { getAllPosts } from '@/lib/posts';
+import { getAllPosts, PostMeta } from '@/lib/posts';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://btechbrain.vercel.app';
   
-  let posts = [];
+  let posts: PostMeta[] = [];
   try {
     posts = await getAllPosts();
   } catch (error) {
