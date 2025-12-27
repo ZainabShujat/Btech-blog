@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import BackButton from "@/app/components/BackButton";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -20,6 +21,7 @@ export default function Nav() {
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-6 text-sm">
+          {/* Home link retained for main navigation, not replaced with BackButton */}
           <Link href="/" className="hover:underline">Home</Link>
           <Link href="/category/friday-insights" className="hover:underline">Friday Insights</Link>
           <Link href="/category/milestone-stories-and-miscellaneous" className="hover:underline">Milestone Stories and Miscellaneous</Link>
@@ -63,6 +65,7 @@ export default function Nav() {
         }`}
       >
         <div className="px-4 pt-3 pb-4 space-y-2">
+          {/* Home link retained for mobile navigation, not replaced with BackButton */}
           <Link href="/" className="block py-2 px-2 rounded hover:bg-slate-50">Home</Link>
           <Link href="/about" className="block py-2 px-2 rounded hover:bg-slate-50">About</Link>
 

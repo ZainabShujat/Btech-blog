@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BackButton from "@/app/components/BackButton";
 
 export default function Footer() {
   return (
@@ -20,6 +21,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-2">Quick Links</h4>
             <ul className="space-y-1 text-slate-300 text-sm">
+              {/* Home link retained for quick links, not replaced with BackButton */}
               <li><Link className="hover:text-white" href="/">Home</Link></li>
               <li><Link className="hover:text-white" href="/about">About</Link></li>
               <li><Link className="hover:text-white" href="/category/friday-insights">Friday Insights</Link></li>

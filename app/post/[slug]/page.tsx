@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { remark } from "remark";
 import html from "remark-html";
 import Link from "next/link";
+import BackButton from "@/app/components/BackButton";
 import ViewCounter from "@/app/components/ViewCounter";
 import LikeButton from "@/app/components/LikeButton";
 
@@ -56,9 +57,9 @@ export default async function Page({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
 
-      <Link href="/" className="block mt-10 text-blue-600 underline">
-        ← Back to home
-      </Link>
+      <div className="mt-10">
+        <BackButton />
+      </div>
     </main>
   );
 }
