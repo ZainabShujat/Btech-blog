@@ -2,7 +2,7 @@
 title: "⭐ The Future of Veritasium"
 slug: "the-future-of-veritasium"
 date: "2025-12-27"
-category: "Tech Pulse"
+category: "curiosity-series"
 series: "Curiosity Edition"
 excerpt: "A quiet YouTube video, a familiar voice stepping back, and why it didn’t feel like an ending at all."
 banner: "/assets/banners/veritasium-future.png"
