@@ -32,28 +32,14 @@ export async function POST(
   try {
     const { slug } = await params;
 
-    // Upsert: insert or update
-    const { data, error } = await supabaseAdmin
-      .from('article_stats')
-      .upsert(
-        { slug, views: 1 },
-        { onConflict: 'slug', ignoreDuplicates: false }
-      )
-      .select()
-      .single();
+    // Use RPC function to increment views
+    const { data, error } = await supabaseAdmin.rpc('increment_views', {
+      article_slug: slug,
+    });
 
-    if (error) {
-      // If record exists, increment
-      const { data: updated, error: updateError } = await supabaseAdmin.rpc(
-        'increment_views',
-        { article_slug: slug }
-      );
+    if (error) throw error;
 
-      if (updateError) throw updateError;
-      return NextResponse.json({ views: updated });
-    }
-
-    return NextResponse.json({ views: data.views });
+    return NextResponse.json({ views: data || 1 });
   } catch (error) {
     console.error('Error incrementing views:', error);
     return NextResponse.json({ error: 'Failed to increment views' }, { status: 500 });
