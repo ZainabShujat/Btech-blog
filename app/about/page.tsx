@@ -37,6 +37,20 @@ export default function AboutPage() {
         work I’m proud of. This site is the first step.
       </p>
 
+      <h2 className="text-2xl font-semibold mt-10 mb-4">Portfolio</h2>
+      <p className="text-lg text-slate-700 leading-relaxed mb-6">
+        Curious about my work? Check out my portfolio site:
+        {" "}
+        <a
+          href="https://zainabshujat.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline text-blue-600 font-medium hover:text-blue-800 transition-colors"
+        >
+          zainabshujat.vercel.app
+        </a>
+      </p>
+
       <h2 className="text-2xl font-semibold mt-10 mb-4">Let’s Connect</h2>
       <p className="text-lg text-slate-700 leading-relaxed">
         Reach out on{" "}
