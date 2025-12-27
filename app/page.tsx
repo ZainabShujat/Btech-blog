@@ -1,6 +1,8 @@
 import { getAllPosts, getLatestPerCategory } from "@/lib/posts";
+import { upcomingSeries } from "@/lib/upcoming-series";
 import Hero from "./components/Hero";
 import CategoryCard from "./components/CategoryCard";
+import SeriesTrailerCard from "./components/SeriesTrailerCard";
 import PostCard from "./components/PostCard";
 import Link from "next/link";
 
@@ -94,6 +96,32 @@ export default async function Home() {
 
         </div>
       </section>
+
+      {/* Coming Soon Series */}
+      {upcomingSeries.length > 0 && (
+        <section className="mx-auto max-w-screen-xl px-4 sm:px-6 md:px-8 py-12">
+          <h2 className="text-center text-lg font-semibold">
+            🎬 <span className="text-purple-600">Coming Soon</span>
+          </h2>
+          <p className="text-center text-slate-600 mt-1 text-sm">
+            Exciting new series launching next month.
+          </p>
+
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {upcomingSeries.map((series) => (
+              <SeriesTrailerCard
+                key={series.id}
+                title={series.title}
+                description={series.description}
+                editionCount={series.editionCount}
+                launchTimeline={series.launchTimeline}
+                color={series.color}
+                tagline={series.tagline}
+              />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Recent Posts */}
       <section

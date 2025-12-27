@@ -8,7 +8,9 @@ export const CARD_CLASSES = `
   .border-green-300,
   .border-emerald-300,
   .border-emerald-500,
-  .border-blue-300
+  .border-blue-300,
+  .border-blue-400,
+  .border-indigo-500
 `;
 
 export const CARD_CHILD_SELECTORS = `
@@ -20,7 +22,9 @@ export const CARD_CHILD_SELECTORS = `
   .border-green-300 *,
   .border-emerald-300 *,
   .border-emerald-500 *,
-  .border-blue-300 *
+  .border-blue-300 *,
+  .border-blue-400 *,
+  .border-indigo-500 *
 `;
 
-export const CARD_EXCLUDE_PATTERN = `.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *, .border-amber-500 *, .border-green-300 *, .border-emerald-300 *, .border-emerald-500 *, .border-blue-300 *`;
+export const CARD_EXCLUDE_PATTERN = `.border-purple-500 *, .border-pink-400 *, .border-pink-300 *, .border-amber-300 *, .border-amber-500 *, .border-green-300 *, .border-emerald-300 *, .border-emerald-500 *, .border-blue-300 *, .border-blue-400 *, .border-indigo-500 *`;
