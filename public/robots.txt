@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://notesfrombtechbrain.vercel.app/sitemap.xml
+Sitemap: https://btechbrain.vercel.app/sitemap.xml
