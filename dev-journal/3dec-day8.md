@@ -1,10 +1,10 @@
 ---
-title: "Dev Journal — Day 8"
+title: "Dev Journal – Day 8"
 date: "2025-12-03"
 summary: "Goodbye Netlify, Hello Vercel"
 ---
 
-# 📝 Day 8 — December 3, 2025  
+# 📝 Day 8 – December 3, 2025  
 ## **Goodbye Netlify, Hello Vercel**
 
 If Day 7 was chaos, Day 8 was clarity.

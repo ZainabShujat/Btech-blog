@@ -1,11 +1,11 @@
 ---
-title: "Dev Journal — Day 9"
+title: "Dev Journal – Day 9"
 date: "2025-12-04"
-summary: "The Upload Marathon — 50 Editions in One Day"
+summary: "The Upload Marathon – 50 Editions in One Day"
 ---
 
-# 📝 Day 9 — December 4, 2025  
-## **The Upload Marathon — 50 Editions in One Day**
+# 📝 Day 9 – December 4, 2025  
+## **The Upload Marathon – 50 Editions in One Day**
 
 Today deserves a standing ovation.  
 My mission: upload every single newsletter I’ve ever written.
@@ -35,7 +35,7 @@ Halfway through I paused and thought:
 
 **“Wait… I actually wrote all of this?”**
 
-Seven months of thoughts, essays, breakdowns, reflections —  
+Seven months of thoughts, essays, breakdowns, reflections –
 suddenly organised, categorised, archived.
 
 For the first time, the blog felt like a **real publication**, not just a project.

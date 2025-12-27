@@ -1,14 +1,14 @@
-# Dev Journal — Day 3 (27th Oct 2025)
+# Dev Journal – Day 3 (27th Oct 2025)
 
-**Focus:** Touching backend for the first time — connecting the dots between my server and MongoDB.
+**Focus:** Touching backend for the first time – connecting the dots between my server and MongoDB.
 
-After a full month of disappearing (hello, October chaos 👋), I finally sat down to restart the blog project. The goal today wasn’t to make something flashy — it was to *understand* how the backend actually breathes.
+After a full month of disappearing (hello, October chaos 👋), I finally sat down to restart the blog project. The goal today wasn’t to make something flashy – it was to *understand* how the backend actually breathes.
 
 🌱 **What I Did**
-- Made my first **Express server** from scratch — and seeing “Hello Zee, your server works 🚀” on localhost was a proud moment.  
+- Made my first **Express server** from scratch – and seeing “Hello Zee, your server works 🚀” on localhost was a proud moment.  
 - Set up **MongoDB Atlas**, created my first cluster, and connected VS Code’s **MongoDB playground** to it (felt very hacker-ish ngl).  
-- Learned that Atlas is basically my database living in the cloud — and the connection string I pasted in `server.js` is how my app talks to it.  
-- Ran `mongoose.connect()` for the first time — *and it actually connected*.  
+- Learned that Atlas is basically my database living in the cloud – and the connection string I pasted in `server.js` is how my app talks to it.  
+- Ran `mongoose.connect()` for the first time – *and it actually connected*.  
 - I now understand that backend isn’t mystical; it’s just wiring things up so that the frontend can talk to data living somewhere safe.
 
 🧩 **New Clarity**
@@ -19,7 +19,7 @@ After a full month of disappearing (hello, October chaos 👋), I finally sat do
 
 💡 **What I Learned**
 - It’s okay to slow down. Following 8 steps at once fries my brain, but doing one calm step at a time actually works.  
-- The backend isn’t a black box — it’s like a nervous system that connects logic, storage, and flow.  
+- The backend isn’t a black box – it’s like a nervous system that connects logic, storage, and flow.
 
 📌 **Next Step**
 - Before I even add APIs, I want to fully *understand* how data moves.  

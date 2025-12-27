@@ -21,12 +21,12 @@ export default function Nav() {
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-6 text-sm">
-          {/* Home link retained for main navigation, not replaced with BackButton */}
           <Link href="/" className="hover:underline">Home</Link>
+          <Link href="/start-here" className="hover:underline text-purple-700 font-semibold">Start Here</Link>
+          <Link href="/series-hub" className="hover:underline text-blue-700 font-semibold">Series Hub</Link>
           <Link href="/category/friday-insights" className="hover:underline">Friday Insights</Link>
           <Link href="/category/milestone-stories-and-miscellaneous" className="hover:underline">Milestone Stories and Miscellaneous</Link>
           <Link href="/about" className="hover:underline">About</Link>
-
         </div>
 
         {/* Mobile hamburger */}
@@ -65,10 +65,10 @@ export default function Nav() {
         }`}
       >
         <div className="px-4 pt-3 pb-4 space-y-2">
-          {/* Home link retained for mobile navigation, not replaced with BackButton */}
           <Link href="/" className="block py-2 px-2 rounded hover:bg-slate-50">Home</Link>
+          <Link href="/start-here" className="block py-2 px-2 rounded bg-purple-100 text-purple-700 font-semibold">Start Here</Link>
+          <Link href="/series-hub" className="block py-2 px-2 rounded bg-blue-100 text-blue-700 font-semibold">Series Hub</Link>
           <Link href="/about" className="block py-2 px-2 rounded hover:bg-slate-50">About</Link>
-
           <Link href="/category/friday-insights" className="block py-2 px-2 rounded hover:bg-slate-50">Friday Insights</Link>
           <Link href="/category/tech-pulse" className="block py-2 px-2 rounded hover:bg-slate-50">Tech Pulse</Link>
           <Link href="/category/world-watch" className="block py-2 px-2 rounded hover:bg-slate-50">World Watch</Link>

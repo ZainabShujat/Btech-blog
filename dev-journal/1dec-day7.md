@@ -1,10 +1,10 @@
 ---
-title: "Dev Journal — Day 7"
+title: "Dev Journal – Day 7"
 date: "2025-12-01"
 summary: "The Category Crisis & The Site Implosion"
 ---
 
-# 📝 Day 7 — December 1, 2025  
+# 📝 Day 7 – December 1, 2025  
 ## **The Category Crisis & The Site Implosion**
 
 Today was supposed to be simple.  
@@ -33,7 +33,7 @@ At one point I just stared at the terminal like it had betrayed the blood pact w
 This was the first day the blog felt *big*.  
 Like it had weight, structure, consequences.
 
-Architectural changes broke things —  
+Architectural changes broke things –
 because the system had finally grown enough *to break*.
 
 It wasn’t a toy project anymore.  

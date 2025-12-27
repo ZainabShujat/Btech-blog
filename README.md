@@ -1,5 +1,5 @@
 # 🧠 Notes From a B Tech Brain  
-**A student-built digital magazine exploring technology, world events, and personal growth — from a B.Tech student’s perspective.**
+**A student-built digital magazine exploring technology, world events, and personal growth – from a B.Tech student’s perspective.**
 
 ---
 
@@ -120,7 +120,7 @@ A fully-functional Next.js magazine that:
 The project will evolve into a personal storytelling and tech-magazine ecosystem that:  
 - Blends writing, design, and engineering.  
 - Demonstrates how a student can build a media brand from scratch.  
-- Eventually becomes a **portfolio piece**, a **blog**, and a **living resume** — all in one.
+- Eventually becomes a **portfolio piece**, a **blog**, and a **living resume** – all in one.
 
 ---
 
@@ -161,7 +161,7 @@ This project demonstrates:
 
 ## 🌟 Core Philosophy
 
-> “Notes From a B Tech Brain” is the story of learning out loud —  
-> documenting curiosity, consistency, and creation — one issue at a time.
+> “Notes From a B Tech Brain” is the story of learning out loud –  
+> documenting curiosity, consistency, and creation – one issue at a time.
 
 ---

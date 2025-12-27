@@ -3,20 +3,20 @@ title: "A Beginning Amidst the Chaos"
 slug: a-beginning-amidst-the-chaos
 date: "2025-04-20"
 category: "milestone-stories-and-miscellaneous"
-excerpt: "Starting a newsletter as a way to make sense of life, tech, and myself — one issue at a time."
+excerpt: "Starting a newsletter as a way to make sense of life, tech, and myself – one issue at a time."
 banner: "/assets/banners/edition1.jpg"
 ---
 
 Hi there!  
-I’m Zainab Shujat — a second-year B. Tech student, an aspiring web developer, and someone trying to make sense of everything around her.
+I’m Zainab Shujat – a second-year B. Tech student, an aspiring web developer, and someone trying to make sense of everything around her.
 
-Over the past few months, I’ve felt a growing urge to do more. Not in the hustle culture sense — but in the **“wake up from passively watching life go by”** sense.
+Over the past few months, I’ve felt a growing urge to do more. Not in the hustle culture sense – but in the **“wake up from passively watching life go by”** sense.
 
 ## The Scroll, the Stuck, and the Stirring
 
 I’ve spent much time feeling idle, lost, and stuck in a loop of mindless scrolling.
 
-Between college classes, coding problems, and the occasional existential crisis, it hit me just how overwhelming the constant stream of information is — and how hard it is actually to *process* any of it.
+Between college classes, coding problems, and the occasional existential crisis, it hit me just how overwhelming the constant stream of information is – and how hard it is actually to *process* any of it.
 
 ## A Bit About Me
 
@@ -44,7 +44,7 @@ I’m building this as a weekly journal-meets-roundup, where I talk about:
 
 Beyond all of that… this is personal.
 
-In my first year, I felt lost — like I was floating through college without direction.
+In my first year, I felt lost – like I was floating through college without direction.
 
 Now, I’m slowly rebuilding:
 
@@ -72,7 +72,7 @@ If you’ve ever felt like you’re consuming too much and processing too little
 Whether you're here out of curiosity or you clicked by accident, I’m truly glad you're here.  
 Let’s take this one post at a time.
 
-See you in Issue #2 — where I’ll talk about something I struggled with recently: *Why does news feel like it’s written for people who already know everything?*
+See you in Issue #2 – where I’ll talk about something I struggled with recently: *Why does news feel like it’s written for people who already know everything?*
 
 Let’s break it down together.
 

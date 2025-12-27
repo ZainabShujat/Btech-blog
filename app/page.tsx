@@ -6,13 +6,16 @@ import SeriesTrailerCard from "./components/SeriesTrailerCard";
 import PostCard from "./components/PostCard";
 import Link from "next/link";
 
+
+
+import StartHereBannerWrapper from "./components/StartHereBannerWrapper";
+
 export default async function Home() {
- 
- const allPosts = await getAllPosts();
+  const allPosts = await getAllPosts();
   const posts = allPosts.slice(0, 3); // Get latest 3 posts by date
-  
   return (
     <main>
+      <StartHereBannerWrapper />
       <Hero />
 
       {/* Categories */}
