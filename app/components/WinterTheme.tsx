@@ -16,16 +16,16 @@ export default function WinterTheme() {
 
   return (
     <>
-      {/* Festive Banner */}
+      {/* Festive Banner (fixed at top) */}
       <div className="winter-banner">
-        <div className="banner-content">
+        <div className="banner-content flex items-center justify-center gap-2 py-2 px-4 bg-blue-100 dark:bg-slate-800 text-blue-900 dark:text-blue-100 font-semibold text-sm md:text-base rounded-b-xl shadow">
           <span className="banner-emoji">❄️</span>
           <span className="banner-text">Happy Holidays! Wishing you a magical season & a Happy New Year✨</span>
           <span className="banner-emoji">🎄</span>
         </div>
       </div>
 
-      {/* Snowflakes */}
+      {/* Snowflakes (fixed, full height, animated) */}
       <div className="snowfall" aria-hidden="true" suppressHydrationWarning>
         {Array.from({ length: 50 }).map((_, i) => (
           <div
@@ -50,6 +50,12 @@ export default function WinterTheme() {
           background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 50%, #7dd3fc 100%) !important;
           background-attachment: fixed;
           padding-top: 50px !important;
+        }
+        @media (prefers-color-scheme: dark) {
+          body {
+            background: linear-gradient(135deg, #0f172a 0%, #334155 50%, #1e293b 100%) !important;
+            color: #f1f5f9 !important;
+          }
         }
 
         /* Add frost effect to cards */
@@ -77,6 +83,29 @@ export default function WinterTheme() {
           position: relative;
           overflow: hidden;
           transition: all 0.3s ease;
+        }
+        @media (prefers-color-scheme: dark) {
+          .border-purple-500,
+          .border-pink-400,
+          .border-pink-300,
+          .border-amber-300,
+          .border-amber-500,
+          .border-green-300,
+          .border-emerald-300,
+          .border-emerald-500,
+          .border-blue-300,
+          .border-blue-400 {
+            background: linear-gradient(135deg, 
+              rgba(30, 41, 59, 0.95), 
+              rgba(51, 65, 85, 0.9),
+              rgba(15, 23, 42, 0.95)) !important;
+            border: 2px solid rgba(51, 65, 85, 0.7) !important;
+            box-shadow: 
+              0 8px 32px rgba(30, 64, 175, 0.15),
+              0 4px 16px rgba(51, 65, 85, 0.2),
+              inset 0 2px 4px rgba(30, 41, 59, 1),
+              inset -2px -2px 8px rgba(51, 65, 85, 0.4) !important;
+          }
         }
 
         .border-purple-500::before,
@@ -145,6 +174,28 @@ export default function WinterTheme() {
             inset -2px -2px 10px rgba(186, 230, 253, 0.5) !important;
           transform: translateY(-2px);
         }
+        @media (prefers-color-scheme: dark) {
+          .border-purple-500:hover,
+          .border-pink-400:hover,
+          .border-pink-300:hover,
+          .border-amber-300:hover,
+          .border-amber-500:hover,
+          .border-green-300:hover,
+          .border-emerald-300:hover,
+          .border-emerald-500:hover,
+          .border-blue-300:hover,
+          .border-blue-400:hover {
+            background: linear-gradient(135deg, 
+              rgba(30, 41, 59, 0.98), 
+              rgba(51, 65, 85, 0.93),
+              rgba(30, 64, 175, 0.90)) !important;
+            box-shadow: 
+              0 12px 40px rgba(30, 64, 175, 0.25),
+              0 6px 20px rgba(51, 65, 85, 0.3),
+              inset 0 2px 6px rgba(30, 41, 59, 1),
+              inset -2px -2px 10px rgba(51, 65, 85, 0.5) !important;
+          }
+        }
 
         @keyframes crystallize {
           0%, 100% {
@@ -161,16 +212,12 @@ export default function WinterTheme() {
       <style jsx>{`
         /* Festive Banner */
         .winter-banner {
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
+          position: static;
           width: 100%;
           background: linear-gradient(90deg, #0ea5e9, #38bdf8, #0ea5e9);
           color: white;
           padding: 12px 20px;
           text-align: center;
-          z-index: 10000;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
           animation: shimmer 3s ease-in-out infinite;
         }
@@ -213,10 +260,7 @@ export default function WinterTheme() {
           }
         }
 
-        /* Add padding to body to account for banner */
-        :global(body) {
-          padding-top: 50px !important;
-        }
+        /* Remove global body padding, use margin on main content instead */
 
         /* Snowfall Effect */
         .snowfall {
