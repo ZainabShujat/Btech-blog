@@ -10,7 +10,8 @@ export type PostMeta = {
   date: string;
   category: string;
   excerpt?: string;
-  banner?: string;   // ⭐ NEW
+  banner?: string;
+  content?: string; // ⭐ For full-content search
 };
 
 
@@ -21,8 +22,8 @@ export async function getAllPosts(): Promise<PostMeta[]> {
     const files = fs.readdirSync(postsDir).filter((f) => f.endsWith(".md"));
     const posts = files.map((file) => {
       const raw = fs.readFileSync(path.join(postsDir, file), "utf8");
-      const { data } = matter(raw);
-      return data as PostMeta;
+      const { data, content } = matter(raw);
+      return { ...data, content } as PostMeta;
     });
     return posts.sort((a, b) => +new Date(b.date) - +new Date(a.date));
   } catch (e) {

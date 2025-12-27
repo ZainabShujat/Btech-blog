@@ -17,7 +17,7 @@ export default function Hero() {
 
         <div className="mt-6 flex items-center justify-center gap-3">
           <Link
-            href="#recent"
+            href="/browse"
             className="rounded-md bg-white text-purple-700 px-4 py-2 font-medium"
           >
             Browse Articles
