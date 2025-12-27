@@ -2,14 +2,20 @@ import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/posts';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://notesfrombtechbrain.vercel.app'; // Replace with your actual domain
+  const baseUrl = 'https://notesfrombtechbrain.vercel.app';
   
-  const posts = await getAllPosts();
+  let posts = [];
+  try {
+    posts = await getAllPosts();
+  } catch (error) {
+    console.error('Error fetching posts for sitemap:', error);
+    posts = [];
+  }
   
   // Generate URLs for all posts
   const postUrls = posts.map((post) => ({
     url: `${baseUrl}/post/${post.slug}`,
-    lastModified: new Date(post.date),
+    lastModified: post.date ? new Date(post.date) : new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));

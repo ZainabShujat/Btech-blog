@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://notesfrombtechbrain.vercel.app/sitemap.xml
