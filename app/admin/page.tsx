@@ -69,7 +69,7 @@ const ADMIN_EMAILS = [
 ];
 
 
-type Tab = "dashboard" | "analytics" | "categories" | "community" | "settings";
+type Tab = "dashboard" | "analytics" | "community" | "settings";
 
 
 export default function AdminDashboard() {
@@ -244,7 +244,7 @@ export default function AdminDashboard() {
         {tab === "analytics" && (
           <AdminAnalytics articleStats={articleStats} />
         )}
-        {/* Categories tab removed */}
+        {/* Categories tab fully removed */}
         {tab === "community" && (
           <AdminCommunity
             pendingCommunityEnabled={pendingCommunityEnabled}

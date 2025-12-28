@@ -2,7 +2,7 @@ import React from "react";
 
 import { Dispatch, SetStateAction } from "react";
 
-type Tab = "dashboard" | "analytics" | "categories" | "community" | "settings";
+type Tab = "dashboard" | "analytics" | "community" | "settings";
 type Props = {
   tab: Tab;
   setTab: Dispatch<SetStateAction<Tab>>;
@@ -16,7 +16,6 @@ export default function AdminSidebar({ tab, setTab, onLogout }: Props) {
         <h2 className="text-lg font-bold mb-2">Admin Menu</h2>
         <ul className="space-y-2">
           <li><button className={`text-left w-full ${tab === "analytics" ? "text-amber-700 font-semibold" : "text-slate-700"}`} onClick={() => setTab("analytics")}>Analytics</button></li>
-          <li><button className={`text-left w-full ${tab === "categories" ? "text-amber-700 font-semibold" : "text-slate-700"}`} onClick={() => setTab("categories")}>Categories</button></li>
           <li><button className={`text-left w-full ${tab === "community" ? "text-amber-700 font-semibold" : "text-slate-700"}`} onClick={() => setTab("community")}>Community</button></li>
           <li><button className={`text-left w-full ${tab === "settings" ? "text-amber-700 font-semibold" : "text-slate-700"}`} onClick={() => setTab("settings")}>Settings</button></li>
           <li><button className="text-left w-full text-slate-700 mt-6" onClick={() => setTab("dashboard")}>← Back to Dashboard</button></li>
