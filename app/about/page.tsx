@@ -48,7 +48,17 @@ export default function AboutPage() {
           <li><span className="font-semibold">v0.6.0</span> — Launched "Coming Soon" section to preview upcoming features.</li>
           <li><span className="font-semibold">v0.7.0</span> — Added likes and views, introducing interactivity and engagement.</li>
           <li><span className="font-semibold">v0.7.5</span> — Added browse by keywords, categories, and title for easier content discovery.</li>
-          <li><span className="font-semibold">v0.8.0</span> — Introduced themes, admin section, and community features for a more robust, interactive experience.</li>
+          <li><span className="font-semibold">v0.8.0</span> — Introduced themes and admin section for a more robust, interactive experience.</li>
+          <li>
+            <span className="relative inline-flex items-center">
+              <span className="font-semibold">v0.9.0</span>
+              <span className="ml-2 relative flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+              </span>
+            </span>
+            — Planned: Full community section rollout, enabling user interaction and collaboration once the site gains traction and stabilizes.
+          </li>
         </ul>
         <p className="text-slate-900 dark:text-slate-100 text-base mt-4">
           <span className="font-semibold">Why v0.8.0?</span> Each version marks a meaningful step in the site's growth. v0.8.0 reflects a platform that’s not just a blog, but a growing community with dynamic content, admin tools, and user engagement features. The journey continues!
