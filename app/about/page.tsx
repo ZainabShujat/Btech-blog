@@ -37,6 +37,23 @@ export default function AboutPage() {
         work I’m proud of. This site is the first step.
       </p>
 
+      <h2 className="text-2xl font-semibold mt-10 mb-4 text-slate-900 dark:text-slate-100">Site Version Timeline</h2>
+      <div className="mb-10">
+        <ul className="list-disc pl-6 space-y-2 text-slate-900 dark:text-slate-100 text-lg">
+          <li><span className="font-semibold">v0.1.0</span> — Initial static blog outline, basic structure and landing page.</li>
+          <li><span className="font-semibold">v0.2.0</span> — Added multiple pages for richer navigation and content separation.</li>
+          <li><span className="font-semibold">v0.3.0</span> — Introduced categories for better content organization.</li>
+          <li><span className="font-semibold">v0.4.0</span> — Enabled individual posts, making the blog dynamic.</li>
+          <li><span className="font-semibold">v0.5.0</span> — Implemented navigation bar and improved user flow.</li>
+          <li><span className="font-semibold">v0.6.0</span> — Launched "Coming Soon" section to preview upcoming features.</li>
+          <li><span className="font-semibold">v0.7.0</span> — Added likes and views, introducing interactivity and engagement.</li>
+          <li><span className="font-semibold">v0.7.5</span> — Added browse by keywords, categories, and title for easier content discovery.</li>
+          <li><span className="font-semibold">v0.8.0</span> — Introduced themes, admin section, and community features for a more robust, interactive experience.</li>
+        </ul>
+        <p className="text-slate-900 dark:text-slate-100 text-base mt-4">
+          <span className="font-semibold">Why v0.8.0?</span> Each version marks a meaningful step in the site's growth. v0.8.0 reflects a platform that’s not just a blog, but a growing community with dynamic content, admin tools, and user engagement features. The journey continues!
+        </p>
+      </div>
       <h2 className="text-2xl font-semibold mt-10 mb-4 text-slate-900 dark:text-slate-100">Portfolio</h2>
       <p className="text-lg text-slate-900 dark:text-slate-100 leading-relaxed mb-6">
         Curious about my work? Check out my portfolio site:
