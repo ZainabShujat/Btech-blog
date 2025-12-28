@@ -3,7 +3,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import BackButton from "@/app/components/BackButton";
 
 interface NavProps {
   communityEnabled?: boolean;

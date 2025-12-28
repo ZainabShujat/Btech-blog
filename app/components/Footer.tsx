@@ -1,5 +1,5 @@
 import Link from "next/link";
-import BackButton from "@/app/components/BackButton";
+
 
 export default function Footer() {
   return (

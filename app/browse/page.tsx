@@ -1,4 +1,4 @@
-import { getAllPosts } from "@/lib/posts";
+import { getAllPosts } from "../../lib/posts";
 import ArticleSearch from "../components/ArticleSearch";
 
 export const metadata = {

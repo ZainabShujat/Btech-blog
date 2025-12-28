@@ -2,12 +2,11 @@
 
 import { useState, useMemo } from "react";
 import PostCard from "./PostCard";
-import type { PostMeta } from "@/lib/posts";
+import type { PostMeta } from "../../lib/posts";
 
 type Props = {
   posts: PostMeta[];
 };
-
 export default function ArticleSearch({ posts }: Props) {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");

@@ -6,9 +6,9 @@ import { notFound } from "next/navigation";
 import { remark } from "remark";
 import html from "remark-html";
 import Link from "next/link";
-import BackButton from "@/app/components/BackButton";
-import ViewCounter from "@/app/components/ViewCounter";
-import LikeButton from "@/app/components/LikeButton";
+import BackButton from "../../components/BackButton";
+import ViewCounter from "../../components/ViewCounter";
+import LikeButton from "../../components/LikeButton";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
