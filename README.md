@@ -41,7 +41,7 @@ A fully-functional Next.js magazine that:
 - Supports **fast static generation** with Next.js App Router  
 - Includes custom React components for hero sections, category cards, and post displays  
 - Provides **automatic categorization** with latest-per-category featured posts  
-- Deployed continuously via Netlify with custom domain and analytics
+- Deployed continuously via **Vercel** with custom domain and analytics
 
 ---
 
@@ -69,7 +69,7 @@ A fully-functional Next.js magazine that:
 ✅ Latest-per-category featured posts on homepage  
 ✅ Markdown content processing with frontmatter support  
 ✅ Banner image system for visual post identification  
-✅ Production deployment on Netlify with custom domain  
+✅ Production deployment on Vercel with custom domain  
 ✅ Analytics integration for traffic insights  
 ✅ SEO-optimized pages with metadata  
 ✅ Typography plugin for enhanced article readability  
@@ -78,7 +78,7 @@ A fully-functional Next.js magazine that:
 ✅ Community tab always visible; shows "under construction" if disabled  
 ✅ Version timeline and site version display on homepage and About page  
 ✅ Improved authentication: admin login works on both local and deployed sites  
-✅ Localhost dev bypass for admin login (for faster testing)**  
+✅ Localhost dev bypass for admin login (for faster testing)
 ✅ Browse by keywords, categories, and title for easier content discovery  
 
 ---
@@ -198,7 +198,7 @@ This project demonstrates:
 - **File-based content management** with structured frontmatter
 - **Responsive design** principles across device sizes
 - **Static site generation** for optimal performance
-- **Continuous deployment** workflows with Netlify
+- **Continuous deployment** workflows with Vercel
 
 ---
 
