@@ -21,6 +21,8 @@ export async function GET() {
     'about',
     'start-here',
     'series-hub',
+    'admin',
+    'community',
   ];
 
   const categories = [
