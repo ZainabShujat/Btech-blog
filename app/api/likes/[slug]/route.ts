@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabase, supabaseAdmin } from '@/lib/supabase';
+import { supabase } from '@/lib/supabase';
 import { cookies } from 'next/headers';
 
 export async function GET(
@@ -110,5 +110,4 @@ export async function POST(
   }
 }
 
-// Optionally export supabaseAdmin if needed elsewhere
-export { supabaseAdmin };
+
