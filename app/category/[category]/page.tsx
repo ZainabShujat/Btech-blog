@@ -1,5 +1,5 @@
-import { getAllPosts } from "@/lib/posts";
-import PostCard from "@/app/components/PostCard";
+import { getAllPosts, PostMeta } from "../../../lib/posts";
+import PostCard from "../../components/PostCard";
 
 type Props = {
   params: Promise<{ category: string }>; // <- params is a Promise in this runtime
@@ -11,7 +11,7 @@ export default async function CategoryPage({ params }: Props) {
 
   const posts = await getAllPosts();
   const filtered = posts.filter(
-    (p) => (p.category || "").toLowerCase() === cat
+    (p: PostMeta) => (p.category || "").toLowerCase() === cat
   );
 
   return (
@@ -25,7 +25,7 @@ export default async function CategoryPage({ params }: Props) {
       )}
 
       <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
-        {filtered.map((p) => (
+        {filtered.map((p: PostMeta) => (
           <PostCard
             key={p.slug}
             title={p.title}
