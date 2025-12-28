@@ -1,10 +1,14 @@
 import { createClient } from "@supabase/supabase-js";
 
-const supabaseAdmin = createClient(
+const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY! // Use service role key for admin actions
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 );
 
-export { supabaseAdmin };
+const supabaseAdmin = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.SUPABASE_SERVICE_ROLE_KEY!
+);
 
-import { supabaseAdmin } from '@/lib/supabase';
+export { supabase, supabaseAdmin };
+
