@@ -6,3 +6,5 @@ const supabaseAdmin = createClient(
 );
 
 export { supabaseAdmin };
+
+import { supabaseAdmin } from '@/lib/supabase';
