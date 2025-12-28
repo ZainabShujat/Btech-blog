@@ -4,7 +4,7 @@ import Script from "next/script"; // <-- ADD THIS
 import "./globals.css";
 
 import Nav from "./components/Nav";
-import dynamic from "next/dynamic";
+import NavWithCommunity from "./components/NavWithCommunityClient";
 import Footer from "./components/Footer";
 import ThemeLoader from "./components/ThemeLoader";
 
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 
 // Client wrapper for Nav to handle communityEnabled state
-const NavWithCommunity = dynamic(() => import("./components/NavWithCommunity"), { ssr: false });
+// const NavWithCommunity = dynamic(() => import("./components/NavWithCommunity"), { ssr: false });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
