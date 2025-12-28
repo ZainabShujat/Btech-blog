@@ -5,7 +5,7 @@ import { supabase } from "@/lib/supabase";
 
 const themeComponents: Record<string, any> = {
   winter: dynamic(() => import("../components/WinterTheme"), { ssr: false }),
-  eid: dynamic(() => import("../components/EidTheme"), { ssr: false }),
+  // ...existing code...
   birthday: dynamic(() => import("../components/BirthdayTheme"), { ssr: false }),
   engineersDay: dynamic(() => import("../components/EngineersDayTheme"), { ssr: false }),
   doctorsDay: dynamic(() => import("../components/DoctorsDayTheme"), { ssr: false }),

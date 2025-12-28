@@ -48,7 +48,7 @@ function categorySubtitle(name: string) {
 // --- Theme labels ---
 const themeLabels: Record<string, string> = {
   winter: "Winter Theme",
-  eid: "Eid Theme",
+  // ...existing code...
   birthday: "Birthday Theme",
   engineersDay: "Engineers Day",
   doctorsDay: "Doctors Day",

@@ -13,7 +13,7 @@
 export const THEME_CONFIG = {
   // Festival Themes
   winter: true,         // ❄️ Christmas/New Year theme
-  eid: false,            // 🌙 Eid theme
+  // ...existing code...
   birthday: false,       // 🌌 Birthday theme (Turning 20)
   
   // Special Day Themes
