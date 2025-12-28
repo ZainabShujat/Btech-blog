@@ -63,23 +63,23 @@ A fully-functional Next.js magazine that:
 ## 🚀 Current Status (December 2025)
 
 
-✅ **50+ articles published** across 8+ diverse categories  
-✅ Fully responsive design with modern UI/UX  
-✅ Dynamic post and category routing with Next.js App Router  
-✅ Latest-per-category featured posts on homepage  
-✅ Markdown content processing with frontmatter support  
-✅ Banner image system for visual post identification  
-✅ Production deployment on Vercel with custom domain  
-✅ Analytics integration for traffic insights  
-✅ SEO-optimized pages with metadata  
-✅ Typography plugin for enhanced article readability  
-✅ Admin panel with polished dashboard, theme controls, and community tab logic
-✅ Theme selector with single-theme enforcement and "None (Default)" option 
-✅ Community tab always visible; shows "under construction" if disabled  
-✅ Version timeline and site version display on homepage and About page  
-✅ Improved authentication: admin login works on both local and deployed sites  
-✅ Localhost dev bypass for admin login (for faster testing)
-✅ Browse by keywords, categories, and title for easier content discovery  
+* ✅ **50+ articles published** across 8+ diverse categories
+* ✅ Fully responsive design with modern UI/UX
+* ✅ Dynamic post and category routing with Next.js App Router
+* ✅ Latest-per-category featured posts on homepage
+* ✅ Markdown content processing with frontmatter support
+* ✅ Banner image system for visual post identification
+* ✅ Production deployment on Vercel with custom domain
+* ✅ Analytics integration for traffic insights
+* ✅ SEO-optimized pages with metadata
+* ✅ Typography plugin for enhanced article readability
+* ✅ Admin panel with polished dashboard, theme controls, and community tab logic
+* ✅ Theme selector with single-theme enforcement and "None (Default)" option
+* ✅ Community tab always visible; shows "under construction" if disabled
+* ✅ Version timeline and site version display on homepage and About page
+* ✅ Improved authentication: admin login works on both local and deployed sites
+* ✅ Localhost dev bypass for admin login (for faster testing)
+* ✅ Browse by keywords, categories, and title for easier content discovery
 
 ---
 
