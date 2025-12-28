@@ -23,6 +23,17 @@ export default function ThemeSelector({ themeState, pendingThemeState, setPendin
     <div>
       <h3 className="text-lg font-semibold mb-4">Theme Selection</h3>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+        {/* None button for default theme */}
+        <label key="none" className={`flex items-center gap-2 p-3 rounded border cursor-pointer transition ${Object.values(pendingThemeState).every((v) => !v) ? "border-amber-500 bg-amber-50" : "border-slate-200"}`}>
+          <input
+            type="radio"
+            name="theme"
+            checked={Object.values(pendingThemeState).every((v) => !v)}
+            onChange={() => setPendingThemeState(Object.fromEntries(Object.keys(pendingThemeState).map((k) => [k, false])))}
+            className="accent-amber-600"
+          />
+          <span>None (Default)</span>
+        </label>
         {Object.keys(themeLabels).map((theme) => (
           <label key={theme} className={`flex items-center gap-2 p-3 rounded border cursor-pointer transition ${pendingThemeState[theme] ? "border-amber-500 bg-amber-50" : "border-slate-200"}`}>
             <input

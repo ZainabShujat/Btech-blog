@@ -91,13 +91,18 @@ export default function AdminDashboard() {
 
   useEffect(() => {
     const getUserAndData = async () => {
-      const { data, error } = await supabase.auth.getUser();
-      if (error) {
-        setError("Error fetching user");
-        setLoading(false);
-        return;
+      // Bypass auth on localhost for testing
+      if (typeof window !== "undefined" && window.location.hostname === "localhost") {
+        setUser({ email: ADMIN_EMAILS[0] } as User);
+      } else {
+        const { data, error } = await supabase.auth.getUser();
+        if (error) {
+          setError("Error fetching user");
+          setLoading(false);
+          return;
+        }
+        setUser(data.user);
       }
-      setUser(data.user);
       // Fetch settings from Supabase
       const { data: settingsData } = await supabase
         .from("settings")

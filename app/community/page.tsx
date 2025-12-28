@@ -1,10 +1,38 @@
 "use client";
 import React from "react";
 
+import { useEffect, useState } from "react";
+
 export default function CommunityPage() {
+  const [enabled, setEnabled] = useState<boolean | null>(null);
+  useEffect(() => {
+    // Fetch community_enabled from Supabase
+    async function fetchEnabled() {
+      const { data } = await import("@/lib/supabase").then((m) => m.supabase.from("settings").select("community_enabled").single());
+      setEnabled(data?.community_enabled ?? false);
+    }
+    fetchEnabled();
+  }, []);
+
+  if (enabled === null) {
+    return <div className="min-h-screen flex items-center justify-center">Loading...</div>;
+  }
+
+  if (!enabled) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-white dark:bg-slate-900">
+        <div className="bg-white rounded-lg shadow p-8 text-center">
+          <h1 className="text-3xl font-bold mb-4">Community Page</h1>
+          <p className="text-gray-500 mb-4">This page is under construction. Please check back soon!</p>
+        </div>
+      </div>
+    );
+  }
+
+  // ...existing code for fully built page...
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900">
-      <div className="w-full bg-gradient-to-br from-purple-600 to-blue-500 py-16 text-center">
+      <div className="w-full bg-linear-to-br from-purple-600 to-blue-500 py-16 text-center">
         <div className="flex flex-col items-center justify-center">
           <div className="bg-white/10 rounded-full p-4 mb-4">
             <svg width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="mx-auto text-white">

@@ -29,9 +29,7 @@ export default function Nav({ communityEnabled }: NavProps) {
           <Link href="/series-hub" className="hover:underline text-blue-700 font-semibold dark:text-blue-300">Series Hub</Link>
           <Link href="/browse" className="hover:underline dark:hover:text-amber-400">Browse</Link>
           <Link href="/about" className="hover:underline dark:hover:text-amber-400">About</Link>
-          {communityEnabled && (
-            <Link href="/community" className="hover:underline dark:hover:text-amber-400">Community</Link>
-          )}
+          <Link href="/community" className="hover:underline dark:hover:text-amber-400">Community</Link>
           <Link href="/admin" className="ml-4 p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Admin Dashboard">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
@@ -89,9 +87,7 @@ export default function Nav({ communityEnabled }: NavProps) {
           <Link href="/series-hub" className="block py-2 px-2 rounded bg-blue-100 text-blue-700 font-semibold dark:bg-blue-900 dark:text-blue-200">Series Hub</Link>
           <Link href="/browse" className="block py-2 px-2 rounded hover:bg-slate-50 dark:hover:bg-slate-800">Browse</Link>
           <Link href="/about" className="block py-2 px-2 rounded hover:bg-slate-50 dark:hover:bg-slate-800">About</Link>
-          {communityEnabled && (
-            <Link href="/community" className="block py-2 px-2 rounded hover:bg-slate-50 dark:hover:bg-slate-800">Community</Link>
-          )}
+          <Link href="/community" className="block py-2 px-2 rounded hover:bg-slate-50 dark:hover:bg-slate-800">Community</Link>
           <Link href="/category/tech-pulse" className="block py-2 px-2 rounded hover:bg-slate-50 dark:hover:bg-slate-800">Tech Pulse</Link>
           <Link href="/category/world-watch" className="block py-2 px-2 rounded hover:bg-slate-50 dark:hover:bg-slate-800">World Watch</Link>
         </div>
