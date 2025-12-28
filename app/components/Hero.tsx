@@ -1,4 +1,6 @@
+
 import Link from "next/link";
+import packageJson from "../../package.json";
 
 export default function Hero() {
   return (
@@ -30,6 +32,8 @@ export default function Hero() {
           <span>50+ editions</span>
           <span>•</span>
           <span>student POV</span>
+          <span>•</span>
+          <span>v{packageJson.version}</span>
         </div>
       </div>
     </section>
