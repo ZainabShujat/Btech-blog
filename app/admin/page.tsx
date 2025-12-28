@@ -215,19 +215,21 @@ export default function AdminDashboard() {
   if (tab === "dashboard") {
     return (
       <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold mb-10 mt-12">Admin Dashboard</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-4xl">
-          {tabMeta.map((t) => (
-            <button
-              key={t.key}
-              onClick={() => setTab(t.key as Tab)}
-              className="flex flex-col items-center justify-center bg-white rounded-xl shadow-lg p-8 hover:shadow-amber-200 transition border-2 border-transparent hover:border-amber-400 focus:outline-none"
-            >
-              <span className="text-4xl mb-2">{t.icon}</span>
-              <span className="text-lg font-semibold mb-1">{t.label}</span>
-              <span className="text-slate-500 text-sm text-center">{t.desc}</span>
-            </button>
-          ))}
+        <h1 className="text-4xl font-bold mb-10 mt-12 text-center">Admin Dashboard</h1>
+        <div className="flex justify-center w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-3xl">
+            {tabMeta.map((t) => (
+              <button
+                key={t.key}
+                onClick={() => setTab(t.key as Tab)}
+                className="flex flex-col items-center justify-center bg-white rounded-xl shadow-lg p-8 hover:shadow-amber-200 transition border-2 border-transparent hover:border-amber-400 focus:outline-none"
+              >
+                <span className="text-4xl mb-2">{t.icon}</span>
+                <span className="text-lg font-semibold mb-1">{t.label}</span>
+                <span className="text-slate-500 text-sm text-center">{t.desc}</span>
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     );
