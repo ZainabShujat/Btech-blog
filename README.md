@@ -1,6 +1,14 @@
 # 🧠 Notes From a B Tech Brain  
 **A student-built digital magazine exploring technology, world events, and personal growth – from a B.Tech student’s perspective.**
 
+
+## 📈 Analytics & SEO
+
+- **Google Analytics:**
+  - Integrated for real-time traffic, engagement, and audience insights. Tracks page views, user behavior, and key site events.
+- **Google Search Console:**
+  - Connected for search performance monitoring, indexing status, and site health. Sitemap submitted for better discoverability and SEO.
+
 ---
 
 ## 🎯 Project Vision
@@ -54,6 +62,7 @@ A fully-functional Next.js magazine that:
 
 ## 🚀 Current Status (December 2025)
 
+
 ✅ **50+ articles published** across 8+ diverse categories  
 ✅ Fully responsive design with modern UI/UX  
 ✅ Dynamic post and category routing with Next.js App Router  
@@ -64,20 +73,55 @@ A fully-functional Next.js magazine that:
 ✅ Analytics integration for traffic insights  
 ✅ SEO-optimized pages with metadata  
 ✅ Typography plugin for enhanced article readability  
+✅ Admin panel with polished dashboard, theme controls, and community tab logic
+✅ Theme selector with single-theme enforcement and "None (Default)" option 
+✅ Community tab always visible; shows "under construction" if disabled  
+✅ Version timeline and site version display on homepage and About page  
+✅ Improved authentication: admin login works on both local and deployed sites  
+✅ Localhost dev bypass for admin login (for faster testing)**  
+✅ Browse by keywords, categories, and title for easier content discovery  
 
 ---
+
 
 ## 📊 Content Statistics
 
 - **Total Articles:** 50+  
 - **Active Categories:** 8+  
 - **Latest Milestone:** Edition 50 published (December 2025)  
-- **Content Types:** Personal essays, tech explainers, world news, project stories  
+- **Content Types:** Personal essays, tech explainers, world news, project stories, admin/dev logs  
 - **Update Frequency:** Weekly publications across multiple streams
+- **Engagement:** Views and likes are now visible on every post, and readers can like posts directly.  
+- **Admin Features:** Admin dashboard, theme controls, and community tab logic now live.  
+- **Community:** Community tab present in navigation, with rollout in progress.
 
 ---
 
+
+
 ## 🛠️ Key Features
+
+- **Start Here Page:**
+  - Dedicated onboarding page for new visitors, highlighting how to navigate the magazine, featured content, and tips for getting the most out of the site.
+
+- **Visible Views & Likes:**
+  - Each post displays real-time view and like counts. Visitors can like posts directly, adding a layer of engagement and feedback.
+
+- **Admin Dashboard:**
+  - Polished UI with analytics, theme controls, and community management.
+  - Theme selector allows only one active theme at a time, with a "None (Default)" option.
+  - Community tab always present; shows "under construction" if disabled.
+  - Localhost dev bypass for admin login to speed up local testing.
+
+- **Version Timeline:**
+  - Site version is now displayed on the homepage and About page.
+  - About page includes a version timeline, showing the evolution of features and future roadmap.
+
+- **Authentication Improvements:**
+  - Admin login works seamlessly on both localhost and deployed sites (Supabase/Google OAuth redirect settings updated).
+
+- **Browse & Search:**
+  - Browse articles by keywords, categories, and title for easier content discovery.
 
 - **Category-Based Navigation:**  
   Browse articles by theme – from tech trends to personal growth stories.  
@@ -98,9 +142,6 @@ A fully-functional Next.js magazine that:
 
 ## 🔮 Future Enhancements
 
-- **Search Functionality:**  
-  Full-text search across all articles by keyword, topic, or date.  
-
 - **Tag System:**  
   Multi-tag support for more granular content discovery.  
 
@@ -109,9 +150,6 @@ A fully-functional Next.js magazine that:
 
 - **Newsletter Archive View:**  
   Dedicated pages for each newsletter stream's complete history.  
-
-- **Dark Mode:**  
-  Theme toggle for improved reading experience.
 
 ---
 
@@ -141,7 +179,12 @@ This project is where both sides of my brain finally meet."*
 | **Phase 3** | Component architecture + styling system | ✅ Completed |
 | **Phase 4** | 50+ articles published across categories | ✅ Completed |
 | **Phase 5** | Production deployment on Vercel | ✅ Completed |
-| **Phase 6** | Search, filters, enhanced UX | 🔜 In Progress |
+| **Phase 6** | Admin dashboard, theme controls, and community tab logic | ✅ Completed |
+| **Phase 7** | Version timeline, site version display, and About page updates | ✅ Completed |
+| **Phase 8** | Browse by keywords, categories, and title | ✅ Completed |
+| **Phase 9** | Improved authentication (local + deployed), localhost dev bypass | ✅ Completed |
+| **Phase 10** | Search, filters, enhanced UX | ✅ Completed |
+| **Phase 11** | Community section (full rollout & features) | 🔜 In Progress |
 
 ---
 
