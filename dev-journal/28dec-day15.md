@@ -44,11 +44,6 @@ Today was all about making the admin side of the blog feel less like a construct
 
 ---
 
-
----
-
-## 💬 Copilot Chat Recap
-
 Spent a good chunk of today bouncing ideas around and getting some real clarity on the site’s versioning and admin logic. Here’s what I tackled:
 
 - Finally added the site version right next to "student POV" on the homepage. Now it’s clear at a glance what build you’re looking at.
