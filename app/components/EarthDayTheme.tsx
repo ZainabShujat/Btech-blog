@@ -7,13 +7,8 @@
 
 'use client';
 
-import { THEME_CONFIG } from './theme-config';
 
 export default function EarthDayTheme() {
-  const isEnabled = THEME_CONFIG.earthDay;
-
-  if (!isEnabled) return null;
-
   return (
     <>
       <div className="earth-banner">

@@ -7,13 +7,8 @@
 
 'use client';
 
-import { THEME_CONFIG } from './theme-config';
 
 export default function WinterTheme() {
-  const isEnabled = THEME_CONFIG.winter;
-
-  if (!isEnabled) return null;
-
   return (
     <>
       {/* Festive Banner (fixed at top) */}

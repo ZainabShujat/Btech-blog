@@ -7,13 +7,8 @@
 
 'use client';
 
-import { THEME_CONFIG } from './theme-config';
 
 export default function MothersDayTheme() {
-  const isEnabled = THEME_CONFIG.mothersDay;
-
-  if (!isEnabled) return null;
-
   return (
     <>
       <div className="mothers-banner">

@@ -7,13 +7,8 @@
 
 'use client';
 
-import { THEME_CONFIG } from './theme-config';
 
 export default function MentalHealthDayTheme() {
-  const isEnabled = THEME_CONFIG.mentalHealthDay;
-
-  if (!isEnabled) return null;
-
   return (
     <>
       {/* Banner */}

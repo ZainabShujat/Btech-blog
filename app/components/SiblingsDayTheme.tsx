@@ -7,13 +7,8 @@
 
 'use client';
 
-import { THEME_CONFIG } from './theme-config';
 
 export default function SiblingsDayTheme() {
-  const isEnabled = THEME_CONFIG.siblingsDay;
-
-  if (!isEnabled) return null;
-
   return (
     <>
       <div className="siblings-banner">

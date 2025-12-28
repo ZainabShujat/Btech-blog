@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabaseAdmin } from '@/lib/supabase';
+import { supabase } from '@/lib/supabase';
 import { cookies } from 'next/headers';
 
 export async function GET(
@@ -12,7 +12,7 @@ export async function GET(
     const userId = cookieStore.get('user_id')?.value || 'anonymous';
 
     // Get like count
-    const { data: stats, error: statsError } = await supabaseAdmin
+    const { data: stats, error: statsError } = await supabase
       .from('article_stats')
       .select('likes')
       .eq('slug', slug)
@@ -23,7 +23,7 @@ export async function GET(
     }
 
     // Check if user has liked
-    const { data: userLike, error: likeError } = await supabaseAdmin
+    const { data: userLike, error: likeError } = await supabase
       .from('user_likes')
       .select('id')
       .eq('slug', slug)
@@ -55,7 +55,7 @@ export async function POST(
     }
 
     // Check if already liked
-    const { data: existingLike } = await supabaseAdmin
+    const { data: existingLike } = await supabase
       .from('user_likes')
       .select('id')
       .eq('slug', slug)
@@ -67,24 +67,24 @@ export async function POST(
 
     if (existingLike) {
       // Unlike
-      await supabaseAdmin
+      await supabase
         .from('user_likes')
         .delete()
         .eq('slug', slug)
         .eq('user_id', userId);
 
-      const { data } = await supabaseAdmin.rpc('decrement_likes', {
+      const { data } = await supabase.rpc('decrement_likes', {
         article_slug: slug,
       });
       newLikeCount = data || 0;
       hasLiked = false;
     } else {
       // Like
-      await supabaseAdmin
+      await supabase
         .from('user_likes')
         .insert({ slug, user_id: userId });
 
-      const { data } = await supabaseAdmin.rpc('increment_likes', {
+      const { data } = await supabase.rpc('increment_likes', {
         article_slug: slug,
       });
       newLikeCount = data || 1;

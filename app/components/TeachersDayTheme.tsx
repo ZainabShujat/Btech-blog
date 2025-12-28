@@ -7,13 +7,8 @@
 
 'use client';
 
-import { THEME_CONFIG } from './theme-config';
 
 export default function TeachersDayTheme() {
-  const isEnabled = THEME_CONFIG.teachersDay;
-
-  if (!isEnabled) return null;
-
   return (
     <>
       {/* Banner */}

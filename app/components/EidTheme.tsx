@@ -7,13 +7,8 @@
 
 'use client';
 
-import { THEME_CONFIG } from './theme-config';
 
 export default function EidTheme() {
-  const isEnabled = THEME_CONFIG.eid;
-
-  if (!isEnabled) return null;
-
   return (
     <>
       {/* Elegant Banner */}

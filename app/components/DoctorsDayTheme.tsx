@@ -7,13 +7,8 @@
 
 'use client';
 
-import { THEME_CONFIG } from './theme-config';
 
 export default function DoctorsDayTheme() {
-  const isEnabled = THEME_CONFIG.doctorsDay;
-
-  if (!isEnabled) return null;
-
   return (
     <>
       {/* Banner */}

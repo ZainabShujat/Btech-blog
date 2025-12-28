@@ -1,5 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabaseAdmin } from '@/lib/supabase';
+// Update this import to match the actual export from '@/lib/supabase'
+// For example, if the default export is the client, use:
+import { supabase } from '@/lib/supabase';
+// Or, if it's named differently, adjust accordingly:
+// import { supabase } from '@/lib/supabase';
 
 export async function GET(
   request: NextRequest,
@@ -8,7 +12,7 @@ export async function GET(
   try {
     const { slug } = await params;
 
-    const { data, error } = await supabaseAdmin
+    const { data, error } = await supabase
       .from('article_stats')
       .select('views')
       .eq('slug', slug)
@@ -33,7 +37,7 @@ export async function POST(
     const { slug } = await params;
 
     // Use RPC function to increment views
-    const { data, error } = await supabaseAdmin.rpc('increment_views', {
+    const { data, error } = await supabase.rpc('increment_views', {
       article_slug: slug,
     });
 

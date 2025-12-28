@@ -7,13 +7,8 @@
 
 'use client';
 
-import { THEME_CONFIG } from './theme-config';
 
 export default function WomensDayTheme() {
-  const isEnabled = THEME_CONFIG.womensDay;
-
-  if (!isEnabled) return null;
-
   return (
     <>
       {/* Banner */}

@@ -1,10 +1,12 @@
 import Link from "next/link";
 
 type Props = {
-  color: string; // Tailwind border color
   title: string;
   desc: string;
   href: string;
+  color?: string;
+  likes?: number; // <-- add this
+  views?: number; // <-- add this
 };
 
 export default function CategoryCard({ color, title, desc, href }: Props) {

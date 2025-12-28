@@ -7,13 +7,8 @@
 
 'use client';
 
-import { THEME_CONFIG } from './theme-config';
 
 export default function NewYearsDayTheme() {
-  const isEnabled = THEME_CONFIG.newYearsDay;
-
-  if (!isEnabled) return null;
-
   return (
     <>
       <div className="newyear-banner">

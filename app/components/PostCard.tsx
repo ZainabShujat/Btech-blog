@@ -10,6 +10,8 @@ type Props = {
   date?: string;
   category?: string;
   banner?: string;
+  likes?: number;   // <-- add this
+  views?: number;   // <-- add this
 };
 
 export default function PostCard({ title, slug, excerpt, date, category, banner }: Props) {

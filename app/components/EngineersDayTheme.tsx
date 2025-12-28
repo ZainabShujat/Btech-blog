@@ -7,13 +7,8 @@
 
 'use client';
 
-import { THEME_CONFIG } from './theme-config';
 
 export default function EngineersDayTheme() {
-  const isEnabled = THEME_CONFIG.engineersDay;
-
-  if (!isEnabled) return null;
-
   return (
     <>
       {/* Banner */}

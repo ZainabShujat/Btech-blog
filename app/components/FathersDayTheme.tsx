@@ -7,13 +7,8 @@
 
 'use client';
 
-import { THEME_CONFIG } from './theme-config';
 
 export default function FathersDayTheme() {
-  const isEnabled = THEME_CONFIG.fathersDay;
-
-  if (!isEnabled) return null;
-
   return (
     <>
       <div className="fathers-banner">

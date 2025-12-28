@@ -7,13 +7,8 @@
 
 'use client';
 
-import { THEME_CONFIG } from './theme-config';
 
 export default function BirthdayTheme() {
-  const isEnabled = THEME_CONFIG.birthday;
-
-  if (!isEnabled) return null;
-
   return (
     <>
       <div className="birthday-banner">
