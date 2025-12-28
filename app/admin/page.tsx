@@ -2,11 +2,11 @@
 import React, { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
 import type { User } from "@supabase/supabase-js";
-import { THEME_CONFIG } from "@/app/components/theme-config";
-import AdminSidebar from "@/app/components/admin/AdminSidebar";
-import AdminAnalytics from "@/app/components/admin/AdminAnalytics";
-import AdminCommunity from "@/app/components/admin/AdminCommunity";
-import AdminSettings from "@/app/components/admin/AdminSettings";
+import { THEME_CONFIG } from "../components/theme-config";
+import AdminSidebar from "../components/admin/AdminSidebar";
+import AdminAnalytics from "../components/admin/AdminAnalytics";
+import AdminCommunity from "../components/admin/AdminCommunity";
+import AdminSettings from "../components/admin/AdminSettings";
 
 
 // --- Helper functions ---
