@@ -15,10 +15,51 @@ export default async function Home() {
       <StartHereBannerWrapper />
       <Hero />
 
+      {/* Recent Posts */}
+      <section
+        id="recent"
+        className="mx-auto max-w-screen-xl px-4 sm:px-6 md:px-8 py-12"
+      >
+        <div className="flex items-center justify-between mb-2">
+          <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
+            🗂️ Recent Posts
+          </h2>
+          <Link
+            href="/browse"
+            className="text-purple-600 underline text-base md:text-lg font-semibold hover:text-purple-800 transition-colors"
+            prefetch={false}
+          >
+            See all
+          </Link>
+        </div>
+        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
+          {posts.length === 0 && (
+            <p className="text-slate-600">
+              No posts yet. Create one in{" "}
+              <Link href="/admin" className="underline text-purple-600">
+                /admin
+              </Link>
+              .
+            </p>
+          )}
+          {posts.map((p) => (
+            <PostCard
+              key={p.slug}
+              title={p.title}
+              slug={p.slug}
+              excerpt={p.excerpt}
+              date={p.date}
+              category={p.category}
+              banner={p.banner}
+            />
+          ))}
+        </div>
+      </section>
+
       {/* Categories */}
       <section className="mx-auto max-w-screen-xl px-4 sm:px-6 md:px-8 py-12">
         <h2 className="text-center text-3xl md:text-4xl font-extrabold tracking-tight mb-2">
-          ✨ Explore <span className="text-purple-600">Categories</span>
+          ✨ <span className="text-purple-600">Browse by topic</span>
         </h2>
         <p className="text-center text-slate-600 mt-1 text-lg md:text-xl font-medium mb-6">
           Different angles: tech, world events, and personal growth.
@@ -83,35 +124,7 @@ export default async function Home() {
         </section>
       )}
 
-      {/* Recent Posts */}
-      <section
-        id="recent"
-        className="mx-auto max-w-screen-xl px-4 sm:px-6 md:px-8 py-12"
-      >
-        <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight mb-2">🗂️ Recent Posts</h2>
-        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
-          {posts.length === 0 && (
-            <p className="text-slate-600">
-              No posts yet. Create one in{" "}
-              <Link href="/admin" className="underline text-purple-600">
-                /admin
-              </Link>
-              .
-            </p>
-          )}
-          {posts.map((p) => (
-            <PostCard
-              key={p.slug}
-              title={p.title}
-              slug={p.slug}
-              excerpt={p.excerpt}
-              date={p.date}
-              category={p.category}
-              banner={p.banner}
-            />
-          ))}
-        </div>
-      </section>
+      {/* Recent Posts (removed duplicate at end) */}
     </main>
   );
 }
