@@ -7,10 +7,10 @@ import { supabase } from '@/lib/supabase';
 
 export async function GET(
   request: NextRequest,
-  { params }: any
+  { params }: { params: Promise<{ slug: string }> }
 ) {
   try {
-    const { slug } = params;
+    const { slug } = await params;
 
     const { data, error } = await supabase
       .from('article_stats')
@@ -31,10 +31,10 @@ export async function GET(
 
 export async function POST(
   request: NextRequest,
-  { params }: any
+  { params }: { params: Promise<{ slug: string }> }
 ) {
   try {
-    const { slug } = params;
+    const { slug } = await params;
 
     // Use RPC function to increment views
     const { data, error } = await supabase.rpc('increment_views', {

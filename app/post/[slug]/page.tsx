@@ -11,23 +11,23 @@ import ViewCounter from "../../components/ViewCounter";
 import LikeButton from "../../components/LikeButton";
 import { Metadata } from 'next';
 
-
-
-
+type PageProps = {
+  params: Promise<{ slug: string }>;
+};
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const slug = params.slug;
-  // Optionally, fetch post data for dynamic title/description
   return {
+    title: 'Your Post Title', // You can fetch this dynamically
+    // ...other metadata,
     alternates: {
       canonical: `https://btechbrain.vercel.app/post/${slug}`,
     },
   };
 }
 
-
-export default async function Page({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default async function Page({ params }: PageProps) {
+  const { slug } = await params;
 
   const filePath = path.join(process.cwd(), "content", "posts", `${slug}.md`);
   if (!fs.existsSync(filePath)) return notFound();
