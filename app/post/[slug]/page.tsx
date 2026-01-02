@@ -12,7 +12,7 @@ import LikeButton from "../../components/LikeButton";
 import { Metadata } from 'next';
 
 type PageProps = {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 };
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 export default async function Page({ params }: PageProps) {
-  const { slug } = await params;
+  const { slug } = params;
 
   const filePath = path.join(process.cwd(), "content", "posts", `${slug}.md`);
   if (!fs.existsSync(filePath)) return notFound();
