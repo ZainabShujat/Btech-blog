@@ -4,10 +4,10 @@ import { cookies } from 'next/headers';
 
 export async function GET(
   request: NextRequest,
-  context: { params: { slug: string } }
+  { params }: any
 ) {
   try {
-    const { slug } = context.params;
+    const { slug } = params;
     const cookieStore = await cookies();
     const userId = cookieStore.get('user_id')?.value || 'anonymous';
 
@@ -42,10 +42,10 @@ export async function GET(
 
 export async function POST(
   request: NextRequest,
-  context: { params: { slug: string } }
+  { params }: any
 ) {
   try {
-    const { slug } = context.params;
+    const { slug } = params;
     const cookieStore = await cookies();
     let userId = cookieStore.get('user_id')?.value;
 
