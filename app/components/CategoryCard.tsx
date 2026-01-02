@@ -10,10 +10,12 @@ type Props = {
 };
 
 export default function CategoryCard({ color, title, desc, href }: Props) {
+  // If color is 'theme', use a default border class (e.g., border-indigo-500) to match the rest
+  const borderClass = color === 'theme' ? 'border-indigo-500' : color;
   return (
     <Link
       href={href}
-      className={`block rounded-xl bg-white/90 dark:bg-slate-900/90 shadow-sm hover:shadow-md border ${color} border-t-4 p-5 transition dark:border-slate-700 dark:hover:shadow-lg`}
+      className={`CategoryCard block rounded-xl bg-white/90 dark:bg-slate-900/90 shadow-sm hover:shadow-md border ${borderClass} border-t-4 p-5 transition dark:border-slate-700 dark:hover:shadow-lg`}
     >
       <div className="font-semibold text-slate-900 dark:text-white">{title}</div>
       <p className="mt-1 text-sm text-slate-700 dark:text-slate-200">{desc}</p>

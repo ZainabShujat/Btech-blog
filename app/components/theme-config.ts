@@ -28,4 +28,5 @@ export const THEME_CONFIG = {
   earthDay: false,       // 🌍 Earth Day (April 22)
   friendshipDay: false,  // 🤝 Friendship Day (1st Sunday of August)
   newYearsDay: false,    // 🎊 New Year's Day (Jan 1)
+  iWonderWhy: false,     // 🤔 I Wonder Why (special category theme)
 }

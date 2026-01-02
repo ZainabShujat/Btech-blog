@@ -1,5 +1,7 @@
 "use client";
 import Link from "next/link";
+import BackButton from "../components/BackButton";
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 const moodIcons: Record<string, string> = {
@@ -64,14 +66,35 @@ const grouped = articles.reduce((acc, article) => {
 }, {} as Record<string, typeof articles>);
 
 export default function StartHerePage() {
+  // Back button logic: go back if possible, else go home
+  const hasHistory = useRef(false);
+  useEffect(() => {
+    if (window && window.history && window.history.length > 1) {
+      hasHistory.current = true;
+    }
+  }, []);
   // Group mood sections into pairs for 2-in-1-line display
   const moodEntries = Object.entries(grouped);
   const moodPairs = [];
   for (let i = 0; i < moodEntries.length; i += 2) {
     moodPairs.push(moodEntries.slice(i, i + 2));
   }
+  const handleBack = () => {
+    if (typeof window !== "undefined" && window.history.length > 1) {
+      window.history.back();
+    } else {
+      window.location.href = "/";
+    }
+  };
   return (
     <main className="w-full max-w-5xl mx-auto px-4 sm:px-6 md:px-8 py-12 text-slate-900 dark:text-slate-100">
+      <button
+        type="button"
+        onClick={handleBack}
+        className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium transition dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-100"
+      >
+        ← Back
+      </button>
       <motion.h1
         className="text-5xl font-extrabold mb-6 text-black dark:text-slate-100"
         initial={{ opacity: 0, y: -20 }}
@@ -110,7 +133,7 @@ export default function StartHerePage() {
                       key={article.slug}
                       whileHover={{ scale: 1.04, boxShadow: "0 4px 24px 0 rgba(80, 70, 180, 0.10)" }}
                       transition={{ type: "spring", stiffness: 300 }}
-                      className="rounded-xl border border-slate-200 bg-white/80 shadow-sm p-5 flex flex-col gap-2 transition-all duration-200 hover:border-blue-400 hover:bg-white"
+                      className="rounded-xl border border-slate-200 bg-white/80 dark:bg-slate-800/90 shadow-sm p-5 flex flex-col gap-2 transition-all duration-200 hover:border-blue-400 hover:bg-white dark:hover:bg-slate-700/90"
                     >
                       <Link
                         href={`/post/${article.slug}`}

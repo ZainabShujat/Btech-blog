@@ -10,7 +10,7 @@ interface AdminCommunityProps {
 export default function AdminCommunity({ pendingCommunityEnabled, handleCommunityToggle, onSave, saving }: AdminCommunityProps) {
   return (
     <section className="mb-10">
-      <div className="bg-white rounded-lg shadow p-6 mb-4">
+      <div className="bg-white dark:bg-slate-900 rounded-lg shadow p-6 mb-4">
         <h2 className="text-2xl font-semibold mb-4">Community Page</h2>
         <label className="flex items-center gap-2">
           <input

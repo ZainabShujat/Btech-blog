@@ -180,8 +180,8 @@ export default function AdminDashboard() {
   if (!user) {
     return (
       <main className="flex min-h-screen bg-slate-50 items-center justify-center">
-        <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md text-center">
-          <h1 className="text-3xl font-bold mb-6">Admin Login</h1>
+        <div className="bg-white dark:bg-slate-900 shadow-lg rounded-lg p-8 w-full max-w-md text-center">
+          <h1 className="text-3xl font-bold mb-6 text-slate-800 dark:text-slate-100">Admin Login</h1>
           <button
             onClick={handleLogin}
             className="px-4 py-2 bg-amber-600 text-white rounded hover:bg-amber-700 w-full"
@@ -197,9 +197,9 @@ export default function AdminDashboard() {
   if (!user.email || !ADMIN_EMAILS.includes(user.email)) {
     return (
       <main className="flex min-h-screen bg-slate-50 items-center justify-center">
-        <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md text-center">
-          <h1 className="text-3xl font-bold mb-6">Access Denied</h1>
-          <p className="text-gray-500 mb-4">You are not authorized to view this page.</p>
+        <div className="bg-white dark:bg-slate-900 shadow-lg rounded-lg p-8 w-full max-w-md text-center">
+          <h1 className="text-3xl font-bold mb-6 text-slate-800 dark:text-slate-100">Access Denied</h1>
+          <p className="text-gray-500 dark:text-slate-300 mb-4">You are not authorized to view this page.</p>
           <button
             onClick={handleLogout}
             className="px-4 py-2 bg-slate-600 text-white rounded hover:bg-slate-700 w-full"
@@ -214,19 +214,19 @@ export default function AdminDashboard() {
   // Dashboard landing grid (no sidebar)
   if (tab === "dashboard") {
     return (
-      <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold mb-10 mt-12 text-center">Admin Dashboard</h1>
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-900 flex flex-col items-center justify-center">
+        <h1 className="text-4xl font-extrabold mb-10 mt-12 text-center text-slate-800 dark:text-white">Admin Dashboard</h1>
         <div className="flex justify-center w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-3xl">
             {tabMeta.map((t) => ( 
               <button
                 key={t.key}
                 onClick={() => setTab(t.key as Tab)}
-                className="flex flex-col items-center justify-center bg-white rounded-xl shadow-lg p-8 hover:shadow-amber-200 transition border-2 border-transparent hover:border-amber-400 focus:outline-none"
+                className="flex flex-col items-center justify-center bg-white dark:bg-slate-900 rounded-xl shadow-lg p-8 hover:shadow-amber-200 transition border-2 border-transparent hover:border-amber-400 focus:outline-none"
               >
                 <span className="text-4xl mb-2">{t.icon}</span>
-                <span className="text-lg font-semibold mb-1">{t.label}</span>
-                <span className="text-slate-500 text-sm text-center">{t.desc}</span>
+                <span className="text-lg font-semibold mb-1 text-slate-800 dark:text-slate-100">{t.label}</span>
+                <span className="text-slate-500 dark:text-slate-300 text-sm text-center">{t.desc}</span>
               </button>
             ))}
           </div>
@@ -237,7 +237,7 @@ export default function AdminDashboard() {
 
   // All other tabs: show sidebar and content
   return (
-    <div className="flex min-h-screen bg-slate-50">
+    <div className="flex min-h-screen bg-slate-50 dark:bg-slate-900">
       {/* Sidebar */}
       <AdminSidebar tab={tab} setTab={(t) => setTab(t as Tab)} onLogout={handleLogout} />
 

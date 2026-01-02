@@ -19,7 +19,7 @@ export default function EarthDayTheme() {
         </div>
       </div>
 
-      <div className="leaves-particles" aria-hidden="true">
+      <div className="leaves-particles" aria-hidden="true" style={{ opacity: 0.18 }}>
         {['🍃', '🌿', '🌾', '🌱', '🍀'].map((leaf, i) => (
           <div
             key={i}
@@ -49,32 +49,14 @@ export default function EarthDayTheme() {
           color: #f2e8cf !important;
         }
 
-        .border-purple-500,
-        .border-pink-400,
-        .border-pink-300,
-        .border-amber-300,
-        .border-amber-500,
-        .border-green-300,
-        .border-emerald-300,
-        .border-emerald-500,
-        .border-blue-300,
-        .border-blue-400 {
+        .CategoryCard {
           background: rgba(255, 255, 255, 0.97) !important;
           backdrop-filter: blur(10px);
           border: 2px solid #6a994e !important;
           box-shadow: 0 4px 20px rgba(106, 153, 78, 0.3) !important;
         }
 
-        .border-purple-500 *,
-        .border-pink-400 *,
-        .border-pink-300 *,
-        .border-amber-300 *,
-        .border-amber-500 *,
-        .border-green-300 *,
-        .border-emerald-300 *,
-        .border-emerald-500 *,
-        .border-blue-300 *,
-        .border-blue-400 * {
+        .CategoryCard * {
           color: #386641 !important;
         }
       `}</style>

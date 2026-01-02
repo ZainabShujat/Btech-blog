@@ -108,16 +108,7 @@ export default function BirthdayTheme() {
         }
 
         /* Galaxy-shimmer card styling */
-        .border-purple-500,
-        .border-pink-400,
-        .border-pink-300,
-        .border-amber-300,
-        .border-amber-500,
-        .border-green-300,
-        .border-emerald-300,
-        .border-emerald-500,
-        .border-blue-300,
-        .border-blue-400 {
+        .CategoryCard {
           background: linear-gradient(135deg, rgba(26, 31, 58, 0.85), rgba(45, 27, 78, 0.85)) !important;
           backdrop-filter: blur(10px);
           border: 1px solid rgba(255, 215, 0, 0.4) !important;
@@ -129,16 +120,7 @@ export default function BirthdayTheme() {
           overflow: hidden;
         }
 
-        .border-purple-500::before,
-        .border-pink-400::before,
-        .border-pink-300::before,
-        .border-amber-300::before,
-        .border-amber-500::before,
-        .border-green-300::before,
-        .border-emerald-300::before,
-        .border-emerald-500::before,
-        .border-blue-300::before,
-        .border-blue-400::before {
+        .CategoryCard::before {
           content: '';
           position: absolute;
           top: -50%;
@@ -299,6 +281,7 @@ export default function BirthdayTheme() {
           pointer-events: none;
           z-index: 1;
           overflow: hidden;
+          opacity: 0.18;
         }
 
         .star-twinkle {

@@ -22,21 +22,28 @@ export default function WinterTheme() {
 
       {/* Snowflakes (fixed, full height, animated) */}
       <div className="snowfall" aria-hidden="true" suppressHydrationWarning>
-        {Array.from({ length: 50 }).map((_, i) => (
-          <div
-            key={i}
-            className="snowflake"
-            style={{
-              left: `${Math.random() * 100}%`,
-              animationDuration: `${Math.random() * 3 + 2}s`,
-              animationDelay: `${Math.random() * 5}s`,
-              fontSize: `${Math.random() * 10 + 10}px`,
-            }}
-            suppressHydrationWarning
-          >
-            ❄
-          </div>
-        ))}
+        {Array.from({ length: 24 }).map((_, i) => {
+          // Use a seeded random for consistent positions on re-render
+          const left = Math.floor((i * 37) % 100); // Spread snowflakes horizontally
+          const duration = 2.2 + (i % 3) + Math.random() * 1.2; // 2.2-5s (faster)
+          const delay = (i * 0.7) % 8; // Staggered delays
+          const size = 16 + (i % 8) + Math.random() * 12; // 16-28px (normal)
+          return (
+            <div
+              key={i}
+              className="snowflake"
+              style={{
+                left: `${left}%`,
+                animationDuration: `${duration}s`,
+                animationDelay: `${delay}s`,
+                fontSize: `${size}px`,
+              }}
+              suppressHydrationWarning
+            >
+              ❄
+            </div>
+          );
+        })}
       </div>
 
       <style jsx global>{`
@@ -53,17 +60,8 @@ export default function WinterTheme() {
           }
         }
 
-        /* Add frost effect to cards */
-        .border-purple-500,
-        .border-pink-400,
-        .border-pink-300,
-        .border-amber-300,
-        .border-amber-500,
-        .border-green-300,
-        .border-emerald-300,
-        .border-emerald-500,
-        .border-blue-300,
-        .border-blue-400 {
+        /* Add frost effect to all category cards */
+        .CategoryCard {
           background: linear-gradient(135deg, 
             rgba(255, 255, 255, 0.9), 
             rgba(240, 249, 255, 0.85),
@@ -80,16 +78,7 @@ export default function WinterTheme() {
           transition: all 0.3s ease;
         }
         @media (prefers-color-scheme: dark) {
-          .border-purple-500,
-          .border-pink-400,
-          .border-pink-300,
-          .border-amber-300,
-          .border-amber-500,
-          .border-green-300,
-          .border-emerald-300,
-          .border-emerald-500,
-          .border-blue-300,
-          .border-blue-400 {
+          .CategoryCard {
             background: linear-gradient(135deg, 
               rgba(30, 41, 59, 0.95), 
               rgba(51, 65, 85, 0.9),
@@ -103,16 +92,7 @@ export default function WinterTheme() {
           }
         }
 
-        .border-purple-500::before,
-        .border-pink-400::before,
-        .border-pink-300::before,
-        .border-amber-300::before,
-        .border-amber-500::before,
-        .border-green-300::before,
-        .border-emerald-300::before,
-        .border-emerald-500::before,
-        .border-blue-300::before,
-        .border-blue-400::before {
+        .CategoryCard::before {
           content: '';
           position: absolute;
           top: 0;
@@ -127,16 +107,7 @@ export default function WinterTheme() {
           opacity: 0.6;
         }
 
-        .border-purple-500::after,
-        .border-pink-400::after,
-        .border-pink-300::after,
-        .border-amber-300::after,
-        .border-amber-500::after,
-        .border-green-300::after,
-        .border-emerald-300::after,
-        .border-emerald-500::after,
-        .border-blue-300::after,
-        .border-blue-400::after {
+        .CategoryCard::after {
           content: '❄';
           position: absolute;
           top: 8px;
@@ -273,15 +244,15 @@ export default function WinterTheme() {
           position: absolute;
           top: -20px;
           color: #f0f9ff;
-          font-size: 18px;
+          font-size: 14px;
           text-shadow: 
-            0 0 10px rgba(14, 165, 233, 0.9),
-            0 0 20px rgba(56, 189, 248, 0.7),
-            0 0 5px rgba(255, 255, 255, 1),
-            2px 2px 4px rgba(14, 116, 144, 0.6);
+            0 0 4px rgba(14, 165, 233, 0.5),
+            0 0 8px rgba(56, 189, 248, 0.3),
+            0 0 2px rgba(255, 255, 255, 0.7);
           animation: fall linear infinite;
-          opacity: 0.95;
-          filter: drop-shadow(0 0 8px rgba(14, 165, 233, 0.6));
+          opacity: 0.68;
+          filter: drop-shadow(0 0 3px rgba(14, 165, 233, 0.3));
+          transition: opacity 0.2s, font-size 0.2s;
         }
 
         @keyframes fall {

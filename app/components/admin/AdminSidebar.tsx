@@ -11,14 +11,14 @@ type Props = {
 
 export default function AdminSidebar({ tab, setTab, onLogout }: Props) {
   return (
-    <aside className="w-64 bg-white border-r border-slate-200 p-6 hidden md:block">
+    <aside className="w-64 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-700 p-6 hidden md:block">
       <div className="mb-8">
         <h2 className="text-lg font-bold mb-2">Admin Menu</h2>
         <ul className="space-y-2">
-          <li><button className={`text-left w-full ${tab === "analytics" ? "text-amber-700 font-semibold" : "text-slate-700"}`} onClick={() => setTab("analytics")}>Analytics</button></li>
-          <li><button className={`text-left w-full ${tab === "community" ? "text-amber-700 font-semibold" : "text-slate-700"}`} onClick={() => setTab("community")}>Community</button></li>
-          <li><button className={`text-left w-full ${tab === "settings" ? "text-amber-700 font-semibold" : "text-slate-700"}`} onClick={() => setTab("settings")}>Settings</button></li>
-          <li><button className="text-left w-full text-slate-700 mt-6" onClick={() => setTab("dashboard")}>← Back to Dashboard</button></li>
+          <li><button className={`text-left w-full ${tab === "analytics" ? "text-amber-700 font-semibold" : "text-slate-700 dark:text-slate-200"}`} onClick={() => setTab("analytics")}>Analytics</button></li>
+          <li><button className={`text-left w-full ${tab === "community" ? "text-amber-700 font-semibold" : "text-slate-700 dark:text-slate-200"}`} onClick={() => setTab("community")}>Community</button></li>
+          <li><button className={`text-left w-full ${tab === "settings" ? "text-amber-700 font-semibold" : "text-slate-700 dark:text-slate-200"}`} onClick={() => setTab("settings")}>Settings</button></li>
+          <li><button className="text-left w-full text-slate-700 dark:text-slate-200 mt-6" onClick={() => setTab("dashboard")}>← Back to Dashboard</button></li>
         </ul>
       </div>
       <button

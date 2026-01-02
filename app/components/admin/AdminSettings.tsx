@@ -13,7 +13,7 @@ interface AdminSettingsProps {
 export default function AdminSettings({ themeState, pendingThemeState, setPendingThemeState, themeLabels, onSaveTheme, saving }: AdminSettingsProps) {
   return (
     <section className="mb-10">
-      <div className="bg-white rounded-lg shadow p-6 mb-4">
+      <div className="bg-white dark:bg-slate-900 rounded-lg shadow p-6 mb-4">
         <h2 className="text-2xl font-semibold mb-4">Settings</h2>
         <ThemeSelector
           themeState={themeState}

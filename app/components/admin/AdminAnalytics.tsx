@@ -14,7 +14,7 @@ interface AdminAnalyticsProps {
 export default function AdminAnalytics({ articleStats }: AdminAnalyticsProps) {
   return (
     <section className="mb-10">
-      <div className="bg-white rounded-lg shadow p-6 mb-4">
+      <div className="bg-white dark:bg-slate-900 rounded-lg shadow p-6 mb-4">
         <h2 className="text-2xl font-semibold mb-6">Article Analytics</h2>
         {/* Summary Cards */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">

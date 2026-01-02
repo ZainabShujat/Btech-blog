@@ -21,7 +21,7 @@ export default function DoctorsDayTheme() {
       </div>
 
       {/* Floating Medical Symbols */}
-      <div className="medical-particles" aria-hidden="true">
+      <div className="medical-particles" aria-hidden="true" style={{ opacity: 0.18 }}>
         {['❤️', '💊', '🩺', '⚕️', '+'].map((symbol, i) => (
           <div
             key={i}
@@ -44,32 +44,14 @@ export default function DoctorsDayTheme() {
           background-attachment: fixed;
         }
 
-        .border-purple-500,
-        .border-pink-400,
-        .border-pink-300,
-        .border-amber-300,
-        .border-amber-500,
-        .border-green-300,
-        .border-emerald-300,
-        .border-emerald-500,
-        .border-blue-300,
-        .border-blue-400 {
+        .CategoryCard {
           background: rgba(255, 255, 255, 0.98) !important;
           backdrop-filter: blur(10px);
           border: 2px solid #1976d2 !important;
           box-shadow: 0 4px 20px rgba(25, 118, 210, 0.2), 0 0 30px rgba(239, 83, 80, 0.1) !important;
         }
 
-        .border-purple-500 *,
-        .border-pink-400 *,
-        .border-pink-300 *,
-        .border-amber-300 *,
-        .border-amber-500 *,
-        .border-green-300 *,
-        .border-emerald-300 *,
-        .border-emerald-500 *,
-        .border-blue-300 *,
-        .border-blue-400 * {
+        .CategoryCard * {
           color: #1565c0 !important;
         }
       `}</style>
