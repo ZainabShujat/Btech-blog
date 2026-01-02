@@ -9,10 +9,22 @@ import Link from "next/link";
 import BackButton from "../../components/BackButton";
 import ViewCounter from "../../components/ViewCounter";
 import LikeButton from "../../components/LikeButton";
+import { Metadata } from 'next';
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const slug = params.slug;
+  return {
+    title: 'Your Post Title', // You can fetch this dynamically
+    // ...other metadata,
+    alternates: {
+      canonical: `https://btechbrain.vercel.app/post/${slug}`,
+    },
+  };
+}
 
 export default async function Page({ params }: PageProps) {
   const { slug } = await params;
