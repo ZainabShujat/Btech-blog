@@ -117,14 +117,15 @@ Accuracy was never the goal. Plausibility was.
 
 Most of us will never read a paper on negative energy conditions or wormhole stability. But we will remember the moment a show made us pause and wonder if something impossible could be real.
 
-Science fiction doesn’t teach facts.
-It teaches curiosity.
+Science fiction doesn’t teach facts. It teaches curiosity.
 
-It sneaks real questions into fictional worlds and lets them linger long after the credits roll.
+And maybe that’s why Stranger Things works the way it does.
 
-Exotic matter may not exist the way Stranger Things shows it.
-But the curiosity it sparks — the urge to dig deeper, to ask why, to revisit old questions — that part is very real.
+It doesn’t ask us to believe in portals or glowing substances or worlds beneath ours. It just asks us to sit with the possibility that reality might be stranger than we’re taught, and that science hasn’t finished explaining itself yet.
 
-And honestly?
+Exotic matter may never open a gate to the Upside Down. But the question it represents already did something just as powerful: it pulled us out of passive watching and into wondering.
 
-That’s the best kind of science there is.
+Somewhere between fiction and physics, between Hawkins and our own world, curiosity slips in.
+
+And once it does, there’s no closing that portal.
+
