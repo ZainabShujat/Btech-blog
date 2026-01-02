@@ -16,7 +16,7 @@ type Props = {
 
 export default function PostCard({ title, slug, excerpt, date, category, banner }: Props) {
   return (
-    <article className="bg-white dark:bg-slate-900 rounded-xl shadow-sm overflow-hidden border border-slate-100 dark:border-slate-700">
+    <article className="bg-white dark:bg-slate-900/90 rounded-xl shadow-sm overflow-hidden border border-slate-100 dark:border-slate-700">
       {banner ? (
         // using a normal <img> is simplest — Next/Image is optional
         <div className="h-72 w-full overflow-hidden">
@@ -32,22 +32,22 @@ export default function PostCard({ title, slug, excerpt, date, category, banner 
       ) : null}
 
       <div className="p-5">
-        <div className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-300 mb-2">
+        <div className="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-200 mb-2">
           {category && <span className="uppercase tracking-wide text-xs">{category}</span>}
           {date && <span className="text-xs">{date}</span>}
         </div>
 
-        <h3 className="text-lg font-semibold leading-tight text-slate-900 dark:text-slate-100">
+        <h3 className="text-lg font-semibold leading-tight text-slate-900 dark:text-white">
           <Link href={`/post/${slug}`}>{title}</Link>
         </h3>
 
-        {excerpt && <p className="text-slate-600 dark:text-slate-300 mt-2">{excerpt}</p>}
+        {excerpt && <p className="text-slate-700 dark:text-slate-200 mt-2">{excerpt}</p>}
 
         <div className="flex items-center justify-between mt-4">
           <ArticleStats slug={slug} />
           <Link
             href={`/post/${slug}`}
-            className="inline-block text-sm font-medium text-purple-600 dark:text-purple-300 underline"
+            className="inline-block text-sm font-medium text-purple-700 dark:text-purple-200 underline"
           >
             Read article →
           </Link>

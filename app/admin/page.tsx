@@ -218,7 +218,7 @@ export default function AdminDashboard() {
         <h1 className="text-4xl font-bold mb-10 mt-12 text-center">Admin Dashboard</h1>
         <div className="flex justify-center w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-3xl">
-            {tabMeta.map((t) => (
+            {tabMeta.map((t) => ( 
               <button
                 key={t.key}
                 onClick={() => setTab(t.key as Tab)}
@@ -243,14 +243,14 @@ export default function AdminDashboard() {
 
       {/* Main Content */}
       <main className="flex-1 p-8 max-w-4xl mx-auto">
-        {tab === "analytics" && (
+          {tab === "analytics" && ( 
           <AdminAnalytics articleStats={articleStats} />
         )}
         {/* Categories tab fully removed */}
         {tab === "community" && (
           <AdminCommunity
             pendingCommunityEnabled={pendingCommunityEnabled}
-            handleCommunityToggle={handleCommunityToggle}
+            handleCommunityToggle={handleCommunityToggle} 
             onSave={handleSaveSettings}
             saving={saving}
           />
@@ -258,7 +258,7 @@ export default function AdminDashboard() {
         {tab === "settings" && (
           <AdminSettings
             themeState={themeState}
-            pendingThemeState={pendingThemeState}
+            pendingThemeState={pendingThemeState} 
             setPendingThemeState={setPendingThemeState}
             themeLabels={themeLabels}
             onSaveTheme={handleSaveSettings}

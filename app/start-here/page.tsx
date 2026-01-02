@@ -71,9 +71,9 @@ export default function StartHerePage() {
     moodPairs.push(moodEntries.slice(i, i + 2));
   }
   return (
-    <main className="w-full max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8 py-12">
+    <main className="w-full max-w-5xl mx-auto px-4 sm:px-6 md:px-8 py-12 text-slate-900 dark:text-slate-100">
       <motion.h1
-        className="text-5xl font-extrabold mb-6 text-black"
+        className="text-5xl font-extrabold mb-6 text-black dark:text-slate-100"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
@@ -81,7 +81,7 @@ export default function StartHerePage() {
         Start Here
       </motion.h1>
       <motion.p
-        className="mb-12 text-xl text-slate-800 max-w-3xl"
+        className="mb-12 text-xl text-slate-800 dark:text-slate-200 max-w-3xl"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.7 }}
@@ -102,7 +102,7 @@ export default function StartHerePage() {
               >
                 <div className="flex items-center gap-2 mb-4">
                   <div className="text-2xl">{moodIcons[mood] || "✨"}</div>
-                  <div className="text-2xl font-extrabold text-black break-words">{mood}</div>
+                  <div className="text-2xl font-extrabold text-black dark:text-slate-100 wrap-break-word">{mood}</div>
                 </div>
                 <ul className="grid gap-6">
                   {articles.map((article, j) => (
@@ -114,11 +114,11 @@ export default function StartHerePage() {
                     >
                       <Link
                         href={`/post/${article.slug}`}
-                        className="text-lg font-semibold text-black hover:text-blue-900 underline underline-offset-2"
+                        className="text-lg font-semibold text-black dark:text-slate-100 hover:text-blue-900 dark:hover:text-blue-300 underline underline-offset-2"
                       >
                         {article.title}
                       </Link>
-                      <p className="text-slate-700 text-base mt-1 flex-1">{article.description}</p>
+                      <p className="text-slate-700 dark:text-slate-200 text-base mt-1 flex-1">{article.description}</p>
                       <span className="text-xs text-slate-400 mt-2">Read →</span>
                     </motion.li>
                   ))}

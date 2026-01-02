@@ -51,11 +51,20 @@ export default function Nav({ communityEnabled }: NavProps) {
           <button
             aria-label="Toggle menu"
             onClick={() => setOpen((v) => !v)}
-            className="p-2 rounded-md inline-flex items-center justify-center text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800"
+            className="p-2 rounded-md inline-flex items-center justify-center focus:outline-none"
+            style={{
+              background: open ? 'rgba(251, 191, 36, 0.15)' : undefined,
+            }}
           >
             {/* simple animated bars */}
             <span className="sr-only">Toggle menu</span>
-            <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <svg
+              className="w-6 h-6"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              style={{ color: open ? '#fbbf24' : 'var(--hamburger-color, #334155)' }}
+            >
               <path
                 className={`transition-all duration-200 ${open ? "opacity-0" : "opacity-100"}`}
                 strokeWidth="2"

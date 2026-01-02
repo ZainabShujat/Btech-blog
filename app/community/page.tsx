@@ -39,7 +39,7 @@ export default function CommunityPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8a2 2 0 012-2h2M12 12v.01M12 16h.01M8 12h.01M16 12h.01" />
             </svg>
           </div>
-          <h1 className="text-4xl font-bold text-white mb-2">Community</h1>
+          <h1 className="text-4xl font-bold text-black dark:text-slate-100 mb-2">Community</h1>
           <p className="text-white text-lg max-w-xl mx-auto mb-6">Connect with fellow readers, share ideas, ask questions, and participate in discussions</p>
           <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-2 rounded shadow mb-4">+ Start Discussion</button>
         </div>

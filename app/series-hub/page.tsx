@@ -75,16 +75,16 @@ const seriesList = [
 
 export default function SeriesHubPage() {
   return (
-    <main className="w-full max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8 py-12">
-      <h1 className="text-5xl font-extrabold mb-10 text-black">Series Hub</h1>
-      <p className="mb-12 text-xl text-slate-800 max-w-3xl">
+    <main className="w-full max-w-5xl mx-auto px-4 sm:px-6 md:px-8 py-12 text-slate-900 dark:text-slate-100">
+      <h1 className="text-5xl font-extrabold mb-10 text-black dark:text-slate-100">Series Hub</h1>
+      <p className="mb-12 text-xl text-slate-800 dark:text-slate-200 max-w-3xl">
         Explore the different universes of this blog. Each series is a journey–find the one that speaks to you, or sample them all.
       </p>
       <div className="space-y-16">
         {seriesList.map((series) => (
           <section key={series.title} className="w-full">
-            <h2 className="text-3xl font-extrabold text-black mb-3 w-full break-words">{series.title}</h2>
-            <p className="text-lg text-slate-800 mb-4 w-full max-w-4xl">{series.description}</p>
+            <h2 className="text-3xl font-extrabold text-black dark:text-slate-100 mb-3 w-full wrap-break-word">{series.title}</h2>
+            <p className="text-lg text-slate-800 dark:text-slate-200 mb-4 w-full max-w-4xl">{series.description}</p>
             <Link
               href={`/category/${series.category}`}
               className="inline-block text-blue-700 underline font-semibold hover:text-blue-900 text-lg mb-2"
