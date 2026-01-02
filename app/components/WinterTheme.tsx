@@ -245,13 +245,14 @@ export default function WinterTheme() {
           top: -20px;
           color: #f0f9ff;
           font-size: 14px;
-          text-shadow: 
-            0 0 4px rgba(14, 165, 233, 0.5),
-            0 0 8px rgba(56, 189, 248, 0.3),
-            0 0 2px rgba(255, 255, 255, 0.7);
+          text-shadow:
+            0 0 8px #38bdf8,
+            0 0 16px #0ea5e9,
+            0 0 24px #0ea5e9,
+            0 0 2px #fff;
           animation: fall linear infinite;
           opacity: 0.68;
-          filter: drop-shadow(0 0 3px rgba(14, 165, 233, 0.3));
+          filter: drop-shadow(0 0 8px #38bdf8) drop-shadow(0 0 12px #0ea5e9);
           transition: opacity 0.2s, font-size 0.2s;
         }
 
