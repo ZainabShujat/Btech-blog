@@ -10,12 +10,12 @@ export type UpcomingSeries = {
 
 export const upcomingSeries: UpcomingSeries[] = [
   {
-    id: "i-wonder-why",
-    title: "I Wonder Why",
-    description: "Exploring questions, ideas, and the joy of learning through curiosity-driven investigations.",
-    editionCount: "20-30 editions",
-    launchTimeline: "January - February 2026",
-    color: "border-indigo-500",
-    tagline: "A journey of curiosity and discovery",
+    id: "scifi-movie-breakdowns",
+    title: "SciFi Movie Breakdowns",
+    description: "Deep dives into classic and modern sci-fi movies, exploring themes, technology, and storytelling.",
+    editionCount: "10-15 editions",
+    launchTimeline: "March - April 2026",
+    color: "border-purple-600",
+    tagline: "Unpacking the future, one film at a time",
   },
 ];
