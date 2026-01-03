@@ -56,14 +56,13 @@ export default async function Home() {
         </div>
       </section>
 
-
       {/* This Month's Series */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-8">
-        <h2 className="text-center text-2xl md:text-3xl font-extrabold tracking-tight mb-2">
+        <h2 className="text-center text-2xl md:text-3xl font-extrabold tracking-tight mb-4">
           📅 <span className="text-purple-600">This Month's Series</span>
         </h2>
-        <div className="flex justify-center mt-12">
-          <div className="scale-110 sm:scale-125 md:scale-150 transition-transform drop-shadow-[0_0_24px_rgba(255,215,0,0.7)] rounded-2xl">
+        <div className="flex justify-center mt-6">
+          <div className="rounded-2xl w-full max-w-5xl p-8">
             <CategoryCard
               color="theme"
               title="I Wonder Why"
