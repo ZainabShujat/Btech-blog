@@ -69,7 +69,6 @@ export default async function Home() {
               title="I Wonder Why"
               desc="A journey of curiosity and discovery."
               href="/category/i-wonder-why"
-              className="ring-4 ring-yellow-400/70 shadow-[0_0_32px_8px_rgba(255,215,0,0.5)]"
             />
           </div>
         </div>
