@@ -12,6 +12,11 @@ interface AdminAnalyticsProps {
 }
 
 export default function AdminAnalytics({ articleStats }: AdminAnalyticsProps) {
+  const [sortByViews, setSortByViews] = React.useState(false);
+  const sortedStats = sortByViews
+    ? [...articleStats].sort((a, b) => b.views - a.views)
+    : articleStats;
+
   return (
     <section className="mb-10">
       <div className="bg-white dark:bg-slate-900 rounded-lg shadow p-6 mb-4">
@@ -35,6 +40,13 @@ export default function AdminAnalytics({ articleStats }: AdminAnalyticsProps) {
             <span className="text-xs text-slate-500 mt-1">Popular (&gt;1k views)</span>
           </div>
         </div>
+        {/* Sort Button */}
+        <button
+          className="mb-4 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition"
+          onClick={() => setSortByViews((v) => !v)}
+        >
+          {sortByViews ? "Show Default Order" : "Sort by Views"}
+        </button>
         {/* Table */}
         <div className="overflow-x-auto rounded-lg border border-slate-100 dark:border-slate-700">
           <table className="min-w-full text-sm">
@@ -46,7 +58,7 @@ export default function AdminAnalytics({ articleStats }: AdminAnalyticsProps) {
               </tr>
             </thead>
             <tbody>
-              {articleStats.map((a, i) => (
+              {sortedStats.map((a, i) => (
                 <tr key={a.slug} className={`border-b ${i % 2 === 0 ? 'bg-white dark:bg-slate-900' : 'bg-slate-50 dark:bg-slate-800'} hover:bg-amber-50 dark:hover:bg-slate-800 transition`}>
                   <td className="py-2 px-3 font-mono text-xs max-w-xs truncate" title={a.title || a.slug}>{a.title || a.slug}</td>
                   <td className="py-2 px-3">{a.views}</td>
