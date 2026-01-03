@@ -21,9 +21,9 @@ export default function CommunityPage() {
   if (!enabled) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-white dark:bg-slate-900">
-        <div className="bg-white rounded-lg shadow p-8 text-center">
-          <h1 className="text-3xl font-bold mb-4">Community Page</h1>
-          <p className="text-gray-500 mb-4">This page is under construction. Please check back soon!</p>
+        <div className="bg-white dark:bg-slate-900 rounded-lg shadow p-8 text-center">
+          <h1 className="text-3xl font-bold mb-4 text-slate-900 dark:text-slate-100">Community Page</h1>
+          <p className="text-gray-500 dark:text-slate-300 mb-4">This page is under construction. Please check back soon!</p>
         </div>
       </div>
     );
