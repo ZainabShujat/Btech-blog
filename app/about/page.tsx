@@ -57,7 +57,17 @@ export default function AboutPage() {
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
               </span>
             </span>
-            — Planned: Full community section rollout, enabling user interaction and collaboration once the site gains traction and stabilizes.
+            — Buying custom domain and setting up the full site.
+          </li>
+          <li>
+            <span className="relative inline-flex items-center">
+              <span className="font-semibold">v1.0.0</span>
+              <span className="ml-2 relative flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+              </span>
+            </span>
+            — Full community page and commenting mechanism.
           </li>
         </ul>
         <p className="text-slate-900 dark:text-slate-100 text-base mt-4">

@@ -27,7 +27,7 @@ export default function WinterTheme() {
           const left = Math.floor((i * 37) % 100); // Spread snowflakes horizontally
           const duration = 2.2 + (i % 3) + Math.random() * 1.2; // 2.2-5s (faster)
           const delay = (i * 0.7) % 8; // Staggered delays
-          const size = 16 + (i % 8) + Math.random() * 12; // 16-28px (normal)
+          const size = 12 + (i % 8) + Math.random() * 12; // 16-28px (normal)
           return (
             <div
               key={i}
@@ -128,7 +128,8 @@ export default function WinterTheme() {
         .border-emerald-300:hover,
         .border-emerald-500:hover,
         .border-blue-300:hover,
-        .border-blue-400:hover {
+        .border-blue-400:hover,
+        .border-indigo-500:hover {
           background: linear-gradient(135deg, 
             rgba(255, 255, 255, 0.95), 
             rgba(224, 242, 254, 0.9),
@@ -150,7 +151,8 @@ export default function WinterTheme() {
           .border-emerald-300:hover,
           .border-emerald-500:hover,
           .border-blue-300:hover,
-          .border-blue-400:hover {
+          .border-blue-400:hover,
+          .border-indigo-500:hover {
             background: linear-gradient(135deg, 
               rgba(30, 41, 59, 0.98), 
               rgba(51, 65, 85, 0.93),

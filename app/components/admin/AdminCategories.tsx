@@ -77,7 +77,7 @@ export default function AdminCategories({ categories, newCategory, setNewCategor
           {categories.map((cat, i) => (
             <div
               key={cat.id || cat.name}
-              className="flex items-center justify-between bg-white rounded-xl shadow-md border border-slate-100 px-8 py-6 hover:shadow-amber-100 transition"
+              className="flex items-center justify-between bg-white dark:bg-slate-900 rounded-xl shadow-md border border-slate-100 px-8 py-6 hover:shadow-amber-100 transition"
             >
               <div className="flex items-center gap-4">
                 <span className={`w-12 h-12 flex items-center justify-center rounded-full text-2xl font-bold ${iconColor(i)}`}>{categoryIcon(cat.name)}</span>
