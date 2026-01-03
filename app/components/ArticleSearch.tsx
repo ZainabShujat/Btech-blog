@@ -1,18 +1,40 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import PostCard from "./PostCard";
 import type { PostMeta } from "../../lib/posts";
 
 type Props = {
   posts: PostMeta[];
 };
+
 export default function ArticleSearch({ posts }: Props) {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
-  const [sortOrder, setSortOrder] = useState<"newest" | "oldest" | "alphabetical">("newest");
+  const [sortOrder, setSortOrder] = useState<"newest" | "oldest" | "alphabetical" | "relevance">("newest");
   const [currentPage, setCurrentPage] = useState(1);
+  const [viewsMap, setViewsMap] = useState<Record<string, number>>({});
   const resultsPerPage = 12;
+
+  // Fetch views for all posts on mount
+  useEffect(() => {
+    let cancelled = false;
+    async function fetchViews() {
+      const entries: [string, number][] = [];
+      for (const post of posts) {
+        try {
+          const res = await fetch(`/api/views/${post.slug}`);
+          const data = await res.json();
+          entries.push([post.slug, typeof data.views === 'number' ? data.views : 0]);
+        } catch {
+          entries.push([post.slug, 0]);
+        }
+      }
+      if (!cancelled) setViewsMap(Object.fromEntries(entries));
+    }
+    fetchViews();
+    return () => { cancelled = true; };
+  }, [posts]);
 
   // Extract unique categories
   const categories = useMemo(() => {
@@ -50,10 +72,11 @@ export default function ArticleSearch({ posts }: Props) {
       sorted.sort((a, b) => +new Date(a.date) - +new Date(b.date));
     } else if (sortOrder === "alphabetical") {
       sorted.sort((a, b) => a.title.localeCompare(b.title));
+    } else if (sortOrder === "relevance") {
+      sorted.sort((a, b) => (viewsMap[b.slug] || 0) - (viewsMap[a.slug] || 0));
     }
-
     return sorted;
-  }, [posts, searchQuery, selectedCategory, sortOrder]);
+  }, [posts, searchQuery, selectedCategory, sortOrder, viewsMap]);
 
   // Pagination
   const totalPages = Math.ceil(filteredAndSortedPosts.length / resultsPerPage);
@@ -73,7 +96,7 @@ export default function ArticleSearch({ posts }: Props) {
     setCurrentPage(1);
   };
 
-  const handleSortChange = (value: "newest" | "oldest" | "alphabetical") => {
+  const handleSortChange = (value: "newest" | "oldest" | "alphabetical" | "relevance") => {
     setSortOrder(value);
     setCurrentPage(1);
   };
@@ -125,12 +148,13 @@ export default function ArticleSearch({ posts }: Props) {
             <select
               id="sort"
               value={sortOrder}
-              onChange={(e) => handleSortChange(e.target.value as "newest" | "oldest" | "alphabetical")}
+              onChange={(e) => handleSortChange(e.target.value as "newest" | "oldest" | "alphabetical" | "relevance")}
               className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none bg-white"
             >
               <option value="newest">Newest First</option>
               <option value="oldest">Oldest First</option>
               <option value="alphabetical">Alphabetical</option>
+              <option value="relevance">Most Viewed (Relevance)</option>
             </select>
           </div>
 
