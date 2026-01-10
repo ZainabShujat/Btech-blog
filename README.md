@@ -13,7 +13,7 @@
 
 ## 🎯 Project Vision
 
-**Live at:** [https://btechbrain.vercel.app/](https://btechbrain.vercel.app/)
+**Live at:** [https://btechbrain.zainabshujat.dev/](https://btechbrain.zainabshujat.dev/)
 
 *Notes From a B Tech Brain* is a living digital magazine that has evolved from a simple newsletter into a fully-functional platform featuring **50+ published articles** across multiple categories. What started as three weekly newsletter streams has grown into a comprehensive student publication.
 

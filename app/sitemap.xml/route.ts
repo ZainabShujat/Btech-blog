@@ -6,7 +6,7 @@ export const revalidate = 0;
 
 
 export async function GET() {
-  const baseUrl = 'https://btechbrain.vercel.app';
+  const baseUrl = 'https://btechbrain.zainabshujat.dev';
 
   let posts: PostMeta[] = [];
   try {
