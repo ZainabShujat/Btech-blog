@@ -3,7 +3,7 @@ title: "I Wonder Why Random Old Memories Appear in the Shower"
 slug: "why-memories-in-shower"
 date: "2026-01-14"
 category: "i-wonder-why"
-excerpt: "I’ll be in the shower, or in the kitchen, doing something that doesn’t really need my attention. My hands are busy. My head isn’t. And then suddenly I’m not where I am anymore. I’m somewhere else. Some random moment from years ago. Not a big one. Not a life-changing one. Just a normal slice of time I didn’t know I’d kept."
+excerpt: "I’ll be in the shower, or in the kitchen, doing something that doesn’t really need my attention. then suddenly... Some random moment from years ago. Just a normal slice of time I didn’t know I’d kept."
 banner: "/assets/banners/iwonderwhy6.png"
 ---
 This almost always happens when I’m not thinking about anything important.

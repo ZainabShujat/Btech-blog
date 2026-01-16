@@ -3,7 +3,7 @@ title: "I Wonder Why Not All Thoughts Are Sentences"
 slug: "why-not-all-thoughts-sentences"
 date: "2026-01-16"
 category: "i-wonder-why"
-excerpt: "The moment I start speaking, the thought collapses a little. What felt clear in my head suddenly sounds incomplete, or oddly wrong. I pause mid-sentence, not because I don’t know what I mean, but because the sentence isn’t cooperating. It makes me wonder whether the thought was ever a sentence to begin with"
+excerpt: "The moment I start speaking, the thought collapses a little. What felt clear in my head suddenly sounds incomplete, or oddly wrong... makes me wonder whether the thought was ever a sentence to begin with"
 banner: "/assets/banners/iwonderwhy7.png"
 ---
 Sometimes I know exactly what I’m thinking until I try to put it into words.
